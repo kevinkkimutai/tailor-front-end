@@ -2,18 +2,16 @@
     <NavBar />
 
   <div class="containe bg-gray-900 text-white">
-  <DashBoard />
-      
+    <RouterView />
   </div>
 </template>
 
 <script>
-import DashBoard from './components/DashBoard.vue'
 import NavBar from './components/NavBar.vue'
 export default {
   components: {
             NavBar,
-            DashBoard,
+           
       
   },
 
