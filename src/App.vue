@@ -22,7 +22,6 @@ export default {
 .containe {
 margin-top: 50px;
 width: auto;
-text-align: center;
 justify-content: center;
 align-items: center;
 }
