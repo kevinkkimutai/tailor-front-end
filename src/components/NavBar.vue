@@ -153,6 +153,9 @@
             </ul>
          </li>
       </ul>
+      <div class="fixed bottom-0 left-0 z-50 flex justify-between w-full p-1 border-t border-gray-200 bg-gray-300 dark:bg-gray-700 dark:border-gray-600">
+        <p class="items-center text-sm font-normal text-blue-800 dark:text-blue-500 hover:underline"> @ KimsTech -- Kelvin Kimutai --.</p>
+      </div>
    </div>
 </aside>
 
