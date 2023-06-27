@@ -1,0 +1,215 @@
+[
+    {
+        "title": "Dashboard",
+        "icon": "bi-house-fill",
+        "path": "/"
+        
+    },
+    
+    {
+        "title": "Orders",
+        "icon": "bi-cart4",
+    
+        "childrens": [
+            {
+                "title": "Add Order",
+                "icon": "bi-cart-plus-fill",
+                "path": "/Addorder"
+            },
+            {
+                "title": "View Order",
+                "icon": "bi-cart-x",
+                "path": "/Vieworder"
+            }
+            
+        ]
+    },
+    {
+        "title": "Customers",
+        "icon": "bi-cart4",
+    
+        "childrens": [
+            {
+                "title": "Add Customer",
+                "icon": "bi-cart-plus-fill",
+                "path": "/Addcustomer"
+            },
+            {
+                "title": "View Customer",
+                "icon": "bi-cart-x",
+                "path": "/"
+            }
+            
+        ]
+    },
+    {
+        "title": "Staff",
+        "icon": "bi-info-circle-fill",
+        "childrens": [
+            {
+                "title": "Add Staff",
+                "path": "/Addstaff"
+            },
+            {
+                "title": "View Staff",
+                "path": "/"
+            },
+            {
+                "title": "Salaries",
+                "path": "/Salaries"
+            },
+            {
+                "title": "Add Designation",
+                "path": "/Adesignation"
+            },
+            {
+                "title": "View Designation",
+                "path": "/"
+            }
+        ]
+    },
+    {
+        "title": "Expenses",
+        "icon": "bi-info-circle-fill",
+        "childrens": [
+            {
+                "title": "Add Expenses",
+                "path": "/Aexpense"
+            },
+            {
+                "title": "View Expenses",
+                "path": "/"
+            },
+            {
+                "title": "Add Expenses Category",
+                "path": "/Aecategory"
+            },
+            {
+                "title": "View Expenses Category",
+                "path": "/"
+            }
+        ]
+    },
+    {
+        "title": "Income",
+        "icon": "bi-info-circle-fill",
+        "childrens": [
+            {
+                "title": "Add Income",
+                "path": "/"
+            },
+            {
+                "title": "View Income",
+                "path": "/"
+            },
+            {
+                "title": "Add Income Category",
+                "path": "/"
+            },
+            {
+                "title": "View Income Category",
+                "path": "/"
+            }
+        ]
+    },
+    {
+        "title": "Measure",
+        "icon": "bi-info-circle-fill",
+        "childrens": [
+            {
+                "title": "Add Clote Type",
+                "path": "/"
+            },
+            {
+                "title": "View Clote Type",
+                "path": "/"
+            },
+            {
+                "title": "Set Masurement Parts",
+                "path": "/"
+            },
+            {
+                "title": "View Masurement Parts",
+                "path": "/"
+            }
+        ]
+    },
+    {
+        "title": "Settings",
+        "icon": "bi-info-circle-fill",
+        "childrens": [
+            {
+                "title": "Settings",
+                "path": "/"
+            },
+            {
+                "title": "Logo",
+                "path": "/"
+            },
+            {
+                "title": "Office Docs",
+                "path": "/"
+            },
+            {
+                "title": "Messages",
+                "childrens": [
+                    {
+                        "title": "Sms/Email Temp",
+                        "path": "/settings/billing/payment"
+                    },
+                    {
+                        "title": "View Sms/Email Temp",
+                        "path": "/settings/billing/subscription"
+                    }
+                ]
+            }
+             ]
+            },
+    
+    {
+        "title": "Account",
+        "icon": "bi-info-circle-fill",
+        "childrens": [
+            {
+                "title": "Login",
+                "path": "/login"
+            },
+            {
+                "title": "Register",
+                "path": "/register"
+            },
+            {
+                "title": "Forgot Password",
+                "path": "/forgot-password"
+            },
+            {
+                "title": "Reset Password",
+                "path": "/reset-password"
+            }
+        ]
+    },
+    {
+        "title": "Profile",
+        "icon": "bi-person-fill",
+        "childrens": [
+            {
+                "title": "Profile",
+                "path": "/profile"
+            },
+            {
+                "title": "Logout",
+                "path": "/logout"
+            }
+        ]
+    },
+    {
+        "title": "Support",
+        "icon": "bi-question-circle-fill",
+        "path": "/support"
+    },
+    {
+        "title": "Report Bug",
+        "icon": "bi-bug",
+        "path": "/report-bug"
+    }
+]

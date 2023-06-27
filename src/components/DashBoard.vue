@@ -378,7 +378,7 @@
 <div class="w-full max-w-l p-1 bg-white border border-gray-200 rounded-lg shadow sm:p-2 dark:bg-gray-800 dark:border-gray-700">
     <div class="w-full bg-gray-100 border rounded-lg flex justify-between items-center px-4 py-2 mb-0">
         <div>
-            <h5 class="text-xl font-bold leading-none text-gray-900 dark:text-white">Latest Customers</h5>
+            <h5 class="text-xl font-bold leading-none text-gray-900 dark:text-white">Latest Reviews</h5>
         
         </div>
         <a href="#" class="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">
