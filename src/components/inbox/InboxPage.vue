@@ -36,8 +36,8 @@
           <li class="py-3 sm:py-4">
                 <a href="#" class="flex px-10 py-3 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg">
       <div class="flex-shrink-0">
-        <img class="rounded-full w-11 h-11" src="/docs/images/people/profile-picture-4.jpg" alt="Leslie image">
-        <div class="absolute flex items-center justify-center w-5 h-5 ml-6 -mt-5 bg-green-400 border border-white rounded-full dark:border-gray-800">
+        <img class="rounded-full w-11 h-11" src="../../assets/logo.png" alt="Leslie image">
+        <div class="absolute flex items-center justify-center w-5 h-5 ml-6 -mt-5 bg-blue-600 border border-white rounded-full dark:border-gray-800">
           <svg class="w-3 h-3 text-white" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h3a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
         </div>
       </div>
@@ -45,15 +45,15 @@
         <p class="text-sm text-gray-500 truncate dark:text-gray-400">
           <span class="font-semibold text-gray-900 dark:text-white">Leslie Livingston</span>
         </p>
-          <div class="text-gray-500 text-sm mb-1.5 dark:text-gray-400 pt-2 me-5">
-             mentioned you in a comment: what do you say? mentioned you in a comment: what do you say? mentioned you in a comment: what do you say?mentioned you in a comment: what do you say?
+          <div class="text-gray-500 text-sm mb-1.5 dark:text-gray-400 pt-2 ms-2 hover:bg-gray-100 rounded-lg">
+            <p class="ms-2"> mentioned you in a comment: what do you say? mentioned you in a comment: what do you say? mentioned you in a comment: what do you say?mentioned you in a comment: what do you say?</p>
           </div>
           <div class="text-xs flex flex-row text-blue-600 dark:text-blue-500">1 hour ago</div>
           <div class="me-5 flex flex-row-reverse ...">
-            <div class="ms-3 me-5 items-center text-sm font-semibold text-green-700 dark:text-white hover:underline dark:text-green-500">
+            <div class="ms-3 me-5 items-center text-sm font-semibold text-green-500 dark:text-white hover:underline dark:text-green-500">
           <a href="#">Reply</a>
       </div>
-      <div class="ms-3 items-center text-sm font-semibold text-purple-600 dark:text-white hover:underline dark:text-green-500">
+      <div class="ms-3 items-center text-sm font-semibold text-red-500 dark:text-white hover:underline dark:text-green-500">
           <a href="#">UnRead</a>
       </div> 
       <div class="ms-3 items-center text-sm font-semibold text-blue-600 dark:text-white hover:underline dark:text-green-500">
@@ -66,7 +66,7 @@
             <li class="py-3 sm:py-4">
                 <a href="#" class="flex px-10 py-3 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg">
       <div class="flex-shrink-0">
-        <img class="rounded-full w-11 h-11" src="/docs/images/people/profile-picture-4.jpg" alt="Leslie image">
+        <img class="rounded-full w-11 h-11" src="../../assets/logo.png" alt="Leslie image">
         <div class="absolute flex items-center justify-center w-5 h-5 ml-6 -mt-5 bg-green-400 border border-white rounded-full dark:border-gray-800">
           <svg class="w-3 h-3 text-white" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h3a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
         </div>
@@ -75,15 +75,15 @@
         <p class="text-sm text-gray-500 truncate dark:text-gray-400">
           <span class="font-semibold text-gray-900 dark:text-white">Leslie Livingston</span>
         </p>
-          <div class="text-gray-500 text-sm mb-1.5 dark:text-gray-400 pt-2 me-5">
-             mentioned you in a comment: what do you say? mentioned you in a comment: what do you say? mentioned you in a comment: what do you say?mentioned you in a comment: what do you say?
+        <div class="text-gray-500 text-sm mb-1.5 dark:text-gray-400 pt-2 ms-2 hover:bg-gray-100 rounded-lg">
+            <p class="ms-2"> mentioned you in a comment: what do you say? mentioned you in a comment: what do you say? mentioned you in a comment: what do you say?mentioned you in a comment: what do you say?</p>
           </div>
           <div class="text-xs flex flex-row text-blue-600 dark:text-blue-500">1 hour ago</div>
           <div class="me-5 flex flex-row-reverse ...">
-            <div class="ms-3 me-5 items-center text-sm font-semibold text-green-700 dark:text-white hover:underline dark:text-green-500">
+            <div class="ms-3 me-5 items-center text-sm font-semibold text-green-500 dark:text-white hover:underline dark:text-green-500">
           <a href="#">Reply</a>
       </div>
-      <div class="ms-3 items-center text-sm font-semibold text-purple-600 dark:text-white hover:underline dark:text-green-500">
+      <div class="ms-3 items-center text-sm font-semibold text-red-500 dark:text-white hover:underline dark:text-green-500">
           <a href="#">UnRead</a>
       </div> 
       <div class="ms-3 items-center text-sm font-semibold text-blue-600 dark:text-white hover:underline dark:text-green-500">
@@ -98,8 +98,8 @@
             <li class="py-3 sm:py-4">
                 <a href="#" class="flex px-10 py-3 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg">
       <div class="flex-shrink-0">
-        <img class="rounded-full w-11 h-11" src="/docs/images/people/profile-picture-4.jpg" alt="Leslie image">
-        <div class="absolute flex items-center justify-center w-5 h-5 ml-6 -mt-5 bg-green-400 border border-white rounded-full dark:border-gray-800">
+        <img class="rounded-full w-11 h-11" src="../../assets/logo.png" alt="Leslie image">
+        <div class="absolute flex items-center justify-center w-5 h-5 ml-6 -mt-5 bg-red-500 border border-white rounded-full dark:border-gray-800">
           <svg class="w-3 h-3 text-white" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h3a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
         </div>
       </div>
@@ -107,15 +107,15 @@
         <p class="text-sm text-gray-500 truncate dark:text-gray-400">
           <span class="font-semibold text-gray-900 dark:text-white">Leslie Livingston</span>
         </p>
-          <div class="text-gray-500 text-sm mb-1.5 dark:text-gray-400 pt-2 me-5">
-             mentioned you in a comment: what do you say? mentioned you in a comment: what do you say? mentioned you in a comment: what do you say?mentioned you in a comment: what do you say?
+        <div class="text-gray-500 text-sm mb-1.5 dark:text-gray-400 pt-2 ms-2 hover:bg-gray-100 rounded-lg">
+            <p class="ms-2"> mentioned you in a comment: what do you say? mentioned you in a comment: what do you say? mentioned you in a comment: what do you say?mentioned you in a comment: what do you say?</p>
           </div>
           <div class="text-xs flex flex-row text-blue-600 dark:text-blue-500">1 hour ago</div>
           <div class="me-5 flex flex-row-reverse ...">
-            <div class="ms-3 me-5 items-center text-sm font-semibold text-green-700 dark:text-white hover:underline dark:text-green-500">
+            <div class="ms-3 me-5 items-center text-sm font-semibold text-green-500 dark:text-white hover:underline dark:text-green-500">
           <a href="#">Reply</a>
       </div>
-      <div class="ms-3 items-center text-sm font-semibold text-purple-600 dark:text-white hover:underline dark:text-green-500">
+      <div class="ms-3 items-center text-sm font-semibold text-red-500 dark:text-white hover:underline dark:text-green-500">
           <a href="#">UnRead</a>
       </div> 
       <div class="ms-3 items-center text-sm font-semibold text-blue-600 dark:text-white hover:underline dark:text-green-500">
