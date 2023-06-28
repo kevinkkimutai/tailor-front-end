@@ -6,6 +6,8 @@ import UserPage from '../components/users/UserPage.vue';
 import StaffPage from '../components/users/StaffPage.vue';
 import LadyProduct from '../components/products/LadyProduct.vue';
 import MenProduct from '../components/products/MenProduct.vue';
+import ExpensePage from '../components/expense/ExpensePage.vue';
+import LoginPage from '../components/auth/LoginPage.vue';
 
 const routes = [
     { path: '/', component: HomePage},
@@ -15,6 +17,8 @@ const routes = [
     { path: '/staff', component: StaffPage},
     { path: '/ladyproduct', component: LadyProduct},
     { path: '/menproduct', component: MenProduct},
+    { path: '/allexpense', component: ExpensePage},
+    { path: '/login', component: LoginPage},
   
 ];
 

@@ -18,7 +18,7 @@
               <!-- breadcrumb end -->
    
       <div class="lg:flex justify-between items-center mb-3 ms-2">
-                <p class="text-2xl font-semibold mb-2 lg:mb-0">List of Men Designs . . .</p> 
+                <p class="text-2xl font-semibold mb-2 lg:mb-0">Men Designs . . .</p> 
               </div>
    
    <!-- product section -->
