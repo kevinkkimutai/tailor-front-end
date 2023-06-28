@@ -4,6 +4,7 @@ import HomePage from '../components/HomePage.vue';
 import InboxPage from '../components/inbox/InboxPage.vue';
 import UserPage from '../components/users/UserPage.vue';
 import StaffPage from '../components/users/StaffPage.vue';
+import ProductsPage from '../components/products/ProductsPage.vue';
 
 const routes = [
     { path: '/', component: HomePage},
@@ -11,6 +12,7 @@ const routes = [
     { path: '/inbox', component: InboxPage},
     { path: '/users', component: UserPage},
     { path: '/staff', component: StaffPage},
+    { path: '/products', component: ProductsPage},
   
 ];
 

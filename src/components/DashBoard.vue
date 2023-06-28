@@ -452,6 +452,8 @@
   </div>
 </div>
 
+<!-- end of row -->
+
 </div>
       <div class="grid grid-cols-2 gap-4">
          <div class="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800">
