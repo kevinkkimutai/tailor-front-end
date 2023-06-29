@@ -1,16 +1,16 @@
 <template>
-    <NavBar />
+    <!-- <NavBar /> -->
 
-  <div class="containe bg-gray-900 text-white">
+  <div class="containe text-white">
     <RouterView />
   </div>
 </template>
 
 <script>
-import NavBar from './components/NavBar.vue'
+// import NavBar from './components/NavBar.vue'
 export default {
   components: {
-            NavBar,
+            
            
       
   },

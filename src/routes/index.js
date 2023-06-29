@@ -10,7 +10,8 @@ import ExpensePage from '../components/expense/ExpensePage.vue';
 import LoginPage from '../components/auth/LoginPage.vue';
 
 const routes = [
-    { path: '/', component: HomePage},
+    { path: '/', component: LoginPage},
+    { path: '/home', component: HomePage},
     { path: '/dashboard', component: DashBoard},
     { path: '/inbox', component: InboxPage},
     { path: '/users', component: UserPage},
@@ -18,7 +19,7 @@ const routes = [
     { path: '/ladyproduct', component: LadyProduct},
     { path: '/menproduct', component: MenProduct},
     { path: '/allexpense', component: ExpensePage},
-    { path: '/login', component: LoginPage},
+
   
 ];
 
