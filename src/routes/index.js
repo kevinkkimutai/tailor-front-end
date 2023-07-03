@@ -8,9 +8,11 @@ import LadyProduct from '../components/products/LadyProduct.vue';
 import MenProduct from '../components/products/MenProduct.vue';
 import ExpensePage from '../components/expense/ExpensePage.vue';
 import LoginPage from '../components/auth/LoginPage.vue';
+import SignupPage from '../components/auth/SignupPage.vue';
 
 const routes = [
     { path: '/', component: LoginPage},
+    { path: '/signup', component: SignupPage},
     { path: '/home', component: HomePage},
     { path: '/dashboard', component: DashBoard},
     { path: '/inbox', component: InboxPage},
