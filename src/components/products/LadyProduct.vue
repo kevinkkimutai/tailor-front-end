@@ -24,7 +24,7 @@
 <!-- product section -->
 
 <div class="lg:flex justify-between items-center ms-10">
-             <p class="text-2xl font-semibold mb-2 lg:mb-0"><span class="text-gray-400">1.</span> DRESSES</p> 
+             <p class="text-2xl font-semibold mb-2 lg:mb-0 text-gray-400"><span class="text-gray-400">1.</span> DRESSES</p> 
            </div>
  <div class="flex flex-wrap -mx-3 mb-4">
   
@@ -81,7 +81,7 @@
 
 <!-- start trausers -->
 <div class="lg:flex justify-between items-center ms-10">
-             <p class="text-2xl font-semibold mb-2 lg:mb-0"><span class="text-gray-400">2.</span> TRAUSERS</p> 
+             <p class="text-2xl font-semibold mb-2 lg:mb-0 text-gray-400"><span class="text-gray-400">2.</span> TRAUSERS</p> 
            </div>
  <div class="flex flex-wrap -mx-3 mb-4">
   
