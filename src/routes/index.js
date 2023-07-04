@@ -10,6 +10,7 @@ import ExpensePage from '../components/expense/ExpensePage.vue';
 import LoginPage from '../components/auth/LoginPage.vue';
 import SignupPage from '../components/auth/SignupPage.vue';
 import AddDesign from '../components/products/AddDesign.vue';
+import AddExpense from '../components/expense/AddExpense.vue';
 
 const routes = [
     { path: '/', component: LoginPage},
@@ -23,6 +24,7 @@ const routes = [
     { path: '/menproduct', component: MenProduct},
     { path: '/allexpense', component: ExpensePage},
     { path: '/adddesign', component: AddDesign},
+    { path: '/addexpense', component: AddExpense},
 
   
 ];
