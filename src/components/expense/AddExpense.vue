@@ -71,8 +71,6 @@
  
  <!-- end of card -->
  
- 
- 
          
      </div>
      </div>
