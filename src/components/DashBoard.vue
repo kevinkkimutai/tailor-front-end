@@ -475,11 +475,20 @@
 
 <script>
 import Chart from 'chart.js/auto';
+import axios from 'axios';
 
 export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  async created() {
+    const response = await axios.get('http://127.0.0.1:8000/api/user', {
+        headers: {
+            Authorization: 'Bearer' + localStorage.getItem('token')
+        }
+    });
+    console.log(response);
   },
 
   data() {
