@@ -475,10 +475,13 @@
 
 <script>
 import Chart from 'chart.js/auto';
+import {mapGetters} from 'vuex';
 
 export default {
   name: 'HelloWorld',
-  props:['user'],
+  computed: {
+      ...mapGetters(['user'])
+   },
 
 
   data() {

@@ -177,15 +177,18 @@
 </template>
 
 <script>
+import {mapGetters} from 'vuex';
 
 export default {
    name: 'NavBar',
-   props:['user'],
    methods: {
       handleLogout() {
          localStorage.removeItem('token');
          this.$router.push('/login');
       }
+   },
+   computed: {
+      ...mapGetters(['user'])
    }
     
 }

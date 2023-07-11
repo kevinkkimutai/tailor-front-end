@@ -1,9 +1,11 @@
 <template>
-     <NavBar :user="user" /> 
+<div>
+  <NavBar /> 
 
-  <div class="containe text-white">
-    <RouterView :user="user" />
-  </div>
+<div class="containe text-white">
+  <RouterView  />
+</div>
+</div>
 </template>
 
 <script>
@@ -22,8 +24,8 @@ export default {
 async created() {
     try {
       const response = await axios.get('user');
-      console.log(response.data.user);
-      this.user = response.data.user
+     
+      this.$store.dispatch('user', response.data.user);
     } catch (error) {
       console.error(error);
       // handle error here
