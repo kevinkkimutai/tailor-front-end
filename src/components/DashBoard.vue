@@ -478,13 +478,7 @@ import Chart from 'chart.js/auto';
 
 export default {
   name: 'HelloWorld',
-  props: {
-    msg: String,
-    user: {
-      type: Object,
-      required: true
-    }
-  },
+  props:['user'],
 
 
   data() {
