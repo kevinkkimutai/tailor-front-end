@@ -1,18 +1,33 @@
 <template>
-     <NavBar /> 
+     <NavBar :user="user" /> 
 
   <div class="containe text-white">
-    <RouterView />
+    <RouterView :user="user" />
   </div>
 </template>
 
 <script>
 import NavBar from './components/NavBar.vue'
+import axios from 'axios';
 export default {
   components: {
           NavBar,  
            
-      
+  },
+    data() {
+    return {
+        user: null
+    }
+  },
+async created() {
+    try {
+      const response = await axios.get('user');
+      console.log(response.data.user);
+      this.user = response.data.user
+    } catch (error) {
+      console.error(error);
+      // handle error here
+    }
   },
 
 }

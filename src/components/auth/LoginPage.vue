@@ -103,7 +103,7 @@
           password: this.password
         });
         localStorage.setItem('token', response.data.authorisation.token);
-        console.log(response.data.authorisation.token);
+        this.$router.push('/Dashboard')
       }
     }
   }

@@ -14,7 +14,7 @@ import AddExpense from '../components/expense/AddExpense.vue';
 import AddStaff from '../components/users/AddStaff.vue';
 
 const routes = [
-    { path: '/', component: LoginPage},
+    { path: '/login', component: LoginPage},
     { path: '/signup', component: SignupPage},
     { path: '/home', component: HomePage},
     { path: '/dashboard', component: DashBoard},

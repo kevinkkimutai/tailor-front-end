@@ -3,7 +3,7 @@
    <div class="p-1 border-gray-200 border-dashed rounded-sm dark:border-gray-700 mt-1">
 
          <!-- breadcrumb -->
-         <!-- <nav class="text-sm font-semibold mb-6" aria-label="Breadcrumb">
+         <nav class="text-sm font-semibold mb-6" aria-label="Breadcrumb">
               <ol class="list-none p-0 inline-flex">
                 <li class="flex i text-blue-500">
                   <a href="#" class="text-gray-700">Home</a>
@@ -13,12 +13,12 @@
                   <a href="#" class="text-gray-600">Dashboard</a>
                 </li>
               </ol>
-            </nav> -->
+            </nav>
             <!-- breadcrumb end -->
 
-            <div class="lg:flex justify-between items-center mb-4">
-              <p class="text-2xl font-semibold mb-2 lg:mb-0">Good afternoon, Joe!</p>
-              <button class="bg-blue-500 hover:bg-blue-600 focus:outline-none rounded-lg px-6 py-2 text-white font-semibold shadow">View Logs</button>
+            <div class="lg:flex justify-between items-center mb-4" v-if="user">
+              <p class="text-xl font-semibold mb-2 lg:mb-0 text-black">Good afternoon, {{user.name}}!</p>
+              <!-- <button class="bg-blue-500 hover:bg-blue-600 focus:outline-none rounded-lg px-6 py-2 text-white font-semibold shadow">View Logs</button> -->
             </div>
 
       <div class="flex flex-wrap -mx-3 mb-4">
@@ -475,29 +475,21 @@
 
 <script>
 import Chart from 'chart.js/auto';
-import axios from 'axios';
 
 export default {
   name: 'HelloWorld',
   props: {
-    msg: String
-  },
-  async created() {
-    try {
-      const response = await axios.get('user', {
-        headers: {
-          Authorization: 'Bearer' + localStorage.getItem('token')
-        }
-      });
-      console.log(response);
-    } catch (error) {
-      console.error(error);
-      // handle error here
+    msg: String,
+    user: {
+      type: Object,
+      required: true
     }
   },
 
+
   data() {
         return {
+
             buyersData: {
                 type: 'line',
                 data: {
