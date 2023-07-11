@@ -483,12 +483,17 @@ export default {
     msg: String
   },
   async created() {
-    const response = await axios.get('http://127.0.0.1:8000/api/user', {
+    try {
+      const response = await axios.get('user', {
         headers: {
-            Authorization: 'Bearer' + localStorage.getItem('token')
+          Authorization: 'Bearer' + localStorage.getItem('token')
         }
-    });
-    console.log(response);
+      });
+      console.log(response);
+    } catch (error) {
+      console.error(error);
+      // handle error here
+    }
   },
 
   data() {

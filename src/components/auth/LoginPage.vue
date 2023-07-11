@@ -2,7 +2,7 @@
 <!-- component -->
 
     <section class=" flex items-stretch text-white p-9 rounded-lg">
-        <div class="lg:flex w-1/2 hidden bg-no-repeat bg-cover relative items-center logimage" stye="background-image: url(https://images.unsplash.com/photo-1577495508048-b635879837f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80);">
+        <div class="lg:flex w-1/2 hidden bg-no-repeat bg-cover relative items-center logimage" style="background-image: url(https://images.unsplash.com/photo-1577495508048-b635879837f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80);">
             <div class="absolute bg-black rounded-lg opacity-70 inset-0 z-0"></div>
             <div class="w-full px-24 z-10">
                 <h1 class="text-5xl font-bold text-left tracking-wide">Keep it special</h1>
@@ -21,7 +21,7 @@
             </div>
         </div>
         <div class="lg:w-1/2 w-full flex text-center md:px-16 px-0 z-0 ">
-            <div class="absolute lg:hidden z-10 inset-0 bg-gray-300 bg-no-repeat bg-cover items-center logimage" stye="background-image: url(https://images.unsplash.com/photo-1577495508048-b635879837f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80);">
+            <div class="absolute lg:hidden z-10 inset-0 bg-gray-300 bg-no-repeat bg-cover items-center logimage" style="background-image: url(https://images.unsplash.com/photo-1577495508048-b635879837f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80);">
                 <div class="absolute opacity-60 inset-0 z-0"></div>
             </div>
             <div class="w-full z-20">
@@ -97,10 +97,8 @@
     },
     methods: {
      async login() {
-        console.log('Login button clicked');
-        const loginUrl = 'http://127.0.0.1:8000/api/login';
         // Make a POST request to the login endpoint
-      const response =  await axios.post(loginUrl, {
+      const response =  await axios.post('login', {
           email: this.email,
           password: this.password
         });
