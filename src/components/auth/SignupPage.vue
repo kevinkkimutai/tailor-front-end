@@ -38,6 +38,9 @@
                     <img src="./logo1.png" alt="logo" class="logo bg-gray-300 border-2 border-white relative text-center">
                     <span class="ms-2"><b>KIMS-TAILORS</b></span>
                 </span>
+                   <!-- alert -->
+                   <error v-if="error" v-html="error" :error="error"/>
+        <!-- end -->
                 <form @submit.prevent="handleRegister" class="sm:w-2/3 w-full px-14 lg:px-0 mx-auto">
                     <!-- Username input -->
                     <label for="input-group-1" class="block text-start mb-2 text-sm font-medium text-gray-800 dark:text-white">Username</label>
@@ -102,17 +105,20 @@
         </section>
     
     </template>
-   
     <script>
     import axios from 'axios';
-
+    import Error from '../error/ErrorPage.vue'
     export default {
-    
+    name: 'SignupPage',
+    components: {
+            Error,    
+    },
         data() {
             return {
                 name: '',
                 email: '',
                 password: '',
+                error: '',
             }
         },
         methods: {
@@ -123,12 +129,17 @@
            email: this.email,
            password: this.password,
          });
-         // handle successful registration
          console.log(response.data);
          this.$router.push('/login')
        } catch (error) {
-         console.error(error);
-         // handle registration error
+        this.error = `<div>
+    <span class="font-medium">Ensure that these requirements are met:</span>
+      <ul class="mt-1.5 ml-4 list-disc text-start">
+        <li>At least 6 characters.</li>
+        <li>At least one lowercase character</li>
+        <li>Inclusion of at least one special character, e.g., ! @ # ?</li>
+    </ul>
+  </div>`;
        }
      }
    }

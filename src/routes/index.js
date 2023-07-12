@@ -12,6 +12,8 @@ import SignupPage from '../components/auth/SignupPage.vue';
 import AddDesign from '../components/products/AddDesign.vue';
 import AddExpense from '../components/expense/AddExpense.vue';
 import AddStaff from '../components/users/AddStaff.vue';
+import ForgotPassword from '../components/auth/ForgotPassword.vue';
+import ResetPassword from '../components/auth/ResetPassword.vue';
 
 const routes = [
     { path: '/login', component: LoginPage},
@@ -27,6 +29,8 @@ const routes = [
     { path: '/adddesign', component: AddDesign},
     { path: '/addexpense', component: AddExpense},
     { path: '/addstaff', component: AddStaff},
+    { path: '/forgotpassword', component: ForgotPassword},
+    { path: '/resetpassword/:token', component: ResetPassword},
 
   
 ];

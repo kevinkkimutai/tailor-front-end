@@ -1,6 +1,4 @@
 <template lang="">
-<!-- component -->
-
     <section class=" flex items-stretch text-white p-9 rounded-lg">
         <div class="lg:flex w-1/2 hidden bg-no-repeat bg-cover relative items-center logimage" style="background-image: url(https://images.unsplash.com/photo-1577495508048-b635879837f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80);">
             <div class="absolute bg-black rounded-lg opacity-70 inset-0 z-0"></div>
@@ -36,36 +34,37 @@
                 <p class="text-black mb-3">
                     or use email your account
                 </p>
-        <!-- alert -->
-                    <error v-if="error" :error="error"/>
+                                   <!-- alert -->
+<div v-if="message" class="sm:w-2/3 w-full mx-auto flex items-center p-2 mb-4 text-sm text-red-800 border border-red-300 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400 dark:border-red-800" role="alert">
+  <svg class="flex-shrink-0 inline w-4 h-4 mr-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
+  </svg>
+  <span class="sr-only">Info</span>
+  <div>
+    <span class="font-medium">
+        {{ message }}
+    </span>
+  </div>
+</div>
+<!-- end -->
+                                  <!-- alert -->
+                                  <error v-if="error" :error="error"/>
         <!-- end -->
-                <form @submit.prevent="login" class="sm:w-2/3 w-full px-14 lg:px-0 mx-auto">
-                   
-                    <label for="input-group-1" class="block text-start mb-2 text-sm font-medium text-gray-800 dark:text-white">Email</label>
-                <div class="relative mb-2">
-                    
-                  <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                    <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
-                  </div>
-                  <input type="email" id="input-group-1" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" v-model="email" placeholder="Enter Email" required>
-                </div>
-                <label for="input-group-1" class="block text-start mb-2 text-sm font-medium text-gray-800 dark:text-white">Password</label>
+                <!-- Form -->
+                <form @submit.prevent="handleForgot" class="sm:w-2/3 w-full px-14 lg:px-0 mx-auto">
+                
+                <label for="input-group-1" class="block text-start mb-2 text-sm font-medium text-gray-800 dark:text-white">Email</label>
                 <div class="relative mb-0">
                   <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                     <svg class="w-[20px] h-[20px] text-gray-500 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
     <path d="M15.077.019a4.658 4.658 0 0 0-4.083 4.714V7H2a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-1.006V4.68a2.624 2.624 0 0 1 2.271-2.67 2.5 2.5 0 0 1 2.729 2.49V8a1 1 0 0 0 2 0V4.5A4.505 4.505 0 0 0 15.077.019ZM9 15.167a1 1 0 1 1-2 0v-3a1 1 0 1 1 2 0v3Z"/>
   </svg>
                   </div>
-                  <input type="password" id="input-group-2" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" v-model="password" placeholder="Enter password" required>
+                  <input type="email" id="input-group-1" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" v-model="email" placeholder="Enter email" required>
                 </div>
                 
-
-
-                    <div class="text-right text-blue-600 hover:underline hover:text-gray-500">
-                        <router-link to="ForgotPassword">Forgot your password?</router-link>
-                    </div>
                     <div class="px-5 pb-2 pt-4">
-                        <button type="submit"  class="uppercase block w-full p-2 text-lg rounded-full bg-indigo-500 hover:bg-indigo-600 focus:outline-none">sign in</button>
+                        <button type="submit"  class="uppercase block w-full p-2 text-lg rounded-full bg-indigo-500 hover:bg-indigo-600 focus:outline-none">Submit</button>
                     </div>
 
                     <div class="p-4 text-center right-0 left-0 flex justify-center space-x-4 mt-16 lg:hidden ">
@@ -84,47 +83,41 @@
             </div>
         </div>
     </section>
-
-
 </template>
 <script>
-  import axios from 'axios';
+import axios from 'axios';
 import Error from '../error/ErrorPage.vue'
-  
-  export default {
-    name: 'LoginPage',
 
+export default {
+    name: 'ForgotPassword',
     components: {
-        Error,
+            Error,    
     },
     data() {
-      return {
-        email: '',
-        password: '',
-        error: ''
-      }
+        return {
+            email: '',
+            message: '',
+            error: '',
+        }
     },
     methods: {
-            async login() {
+       async handleForgot() {
         try {
         // Make a POST request to the login endpoint
-      const response =  await axios.post('login', {
+       await axios.post('forgot-password', {
           email: this.email,
-          password: this.password
         });
-        localStorage.setItem('token', response.data.authorisation.token);
-        this.$store.dispatch('user', response.data.user);
-        this.$router.push('/Dashboard')
+       this.message = 'Reset link has been sent to your email!.';
+       this.error = '';
     } catch (error) {
-           this.error = 'Invalid username/password! Try again.'
+           this.error = 'An error occured! Try again.';
+           this.message = '';
         }
-      }
-       
-  
+        }
     }
-  }
-  </script>
-<style scoped>
+}
+</script>
+<style lang="css" scoped>
 .logimage {
     background-image: url(../../assets/dress331.jpg);
 }
@@ -133,4 +126,5 @@ import Error from '../error/ErrorPage.vue'
     width: 60px;
     border-radius: 50%;
 }
-</style>
+</style>>
+    
