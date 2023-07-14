@@ -1,6 +1,6 @@
 <template>
 
-<div>
+
    <nav class="fixed top-0 z-50 w-full bg-white border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700">
   <div class="px-2 py-2 lg:px-5 lg:pl-3">
     <div class="flex items-center justify-between">
@@ -29,7 +29,7 @@
             <!-- end -->
 
             <!-- if user -->
-          <div class="flex items-center ml-3 me-4 "  v-if="user">
+          <div class="flex items-center ml-3 "  v-if="user">
             <div>
               <button type="button" class="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" aria-expanded="false" data-dropdown-toggle="dropdown-user">
                 <span class="sr-only">Open user menu</span>
@@ -172,7 +172,7 @@
       </div>
    </div>
 </aside>
-</div>
+
 
 </template>
 
@@ -185,6 +185,10 @@ export default {
       handleLogout() {
          localStorage.removeItem('token');
          this.$router.push('/login');
+         // Refresh the page after a short delay (e.g., 100 milliseconds)
+    setTimeout(() => {
+      window.location.reload();
+    }, 100);
       }
    },
    computed: {

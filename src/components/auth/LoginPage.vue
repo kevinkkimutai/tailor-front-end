@@ -118,7 +118,7 @@ import Error from '../error/ErrorPage.vue'
          // Refresh the page after a short delay (e.g., 100 milliseconds)
     setTimeout(() => {
       window.location.reload();
-    }, 1);
+    }, 100);
     } catch (error) {
            this.error = 'Invalid username/password! Try again.'
         }
