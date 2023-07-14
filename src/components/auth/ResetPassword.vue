@@ -89,7 +89,7 @@ export default {
     },
     methods: {
         async handleReset() {
-        const response =  await axios.post('password/reset', {
+        const response =  await axios.post('reset-password', {
           password: this.password,
           conformpassword: this.confirmpassword,
           token: this.$router.params.token

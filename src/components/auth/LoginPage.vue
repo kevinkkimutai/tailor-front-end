@@ -115,6 +115,10 @@ import Error from '../error/ErrorPage.vue'
         localStorage.setItem('token', response.data.authorisation.token);
         this.$store.dispatch('user', response.data.user);
         this.$router.push('/Dashboard')
+         // Refresh the page after a short delay (e.g., 100 milliseconds)
+    setTimeout(() => {
+      window.location.reload();
+    }, 1);
     } catch (error) {
            this.error = 'Invalid username/password! Try again.'
         }
