@@ -12,3 +12,4 @@ module.exports = {
     require('flowbite/plugin')
 ]
 }
+

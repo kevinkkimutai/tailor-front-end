@@ -18,7 +18,7 @@ import ResetPassword from '../components/auth/ResetPassword.vue';
 const routes = [
     { path: '/login', component: LoginPage},
     { path: '/signup', component: SignupPage},
-    { path: '/home', component: HomePage},
+    { path: '/', component: HomePage},
     { path: '/dashboard', component: DashBoard},
     { path: '/inbox', component: InboxPage},
     { path: '/users', component: UserPage},
