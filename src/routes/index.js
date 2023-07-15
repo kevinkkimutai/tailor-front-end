@@ -1,14 +1,15 @@
-import { createRouter,createWebHistory } from 'vue-router';
-import DashBoard from '../components/DashBoard.vue';
+import { createRouter, createWebHistory } from 'vue-router';
+import store from '../vuex';
+import LoginPage from '../components/auth/LoginPage.vue';
+import SignupPage from '../components/auth/SignupPage.vue';
 import HomePage from '../components/HomePage.vue';
+import DashBoard from '../components/DashBoard.vue';
 import InboxPage from '../components/inbox/InboxPage.vue';
 import UserPage from '../components/users/UserPage.vue';
 import StaffPage from '../components/users/StaffPage.vue';
 import LadyProduct from '../components/products/LadyProduct.vue';
 import MenProduct from '../components/products/MenProduct.vue';
 import ExpensePage from '../components/expense/ExpensePage.vue';
-import LoginPage from '../components/auth/LoginPage.vue';
-import SignupPage from '../components/auth/SignupPage.vue';
 import AddDesign from '../components/products/AddDesign.vue';
 import AddExpense from '../components/expense/AddExpense.vue';
 import AddStaff from '../components/users/AddStaff.vue';
@@ -16,29 +17,94 @@ import ForgotPassword from '../components/auth/ForgotPassword.vue';
 import ResetPassword from '../components/auth/ResetPassword.vue';
 
 const routes = [
-    { path: '/login', component: LoginPage},
-    { path: '/signup', component: SignupPage},
-    { path: '/', component: HomePage},
-    { path: '/dashboard', component: DashBoard},
-    { path: '/inbox', component: InboxPage},
-    { path: '/users', component: UserPage},
-    { path: '/staff', component: StaffPage},
-    { path: '/ladyproduct', component: LadyProduct},
-    { path: '/menproduct', component: MenProduct},
-    { path: '/allexpense', component: ExpensePage},
-    { path: '/adddesign', component: AddDesign},
-    { path: '/addexpense', component: AddExpense},
-    { path: '/addstaff', component: AddStaff},
-    { path: '/forgotpassword', component: ForgotPassword},
-    { path: '/resetpassword/:token', component: ResetPassword},
-
-  
+  {
+    path: '/login',
+    component: LoginPage,
+    meta: { requiresAuth: false },
+  },
+  {
+    path: '/signup',
+    component: SignupPage,
+    meta: { requiresAuth: false },
+  },
+  {
+    path: '/',
+    component: HomePage,
+    meta: { requiresAuth: false },
+  },
+  {
+    path: '/dashboard',
+    component: DashBoard,
+    meta: { requiresAuth: true },
+  },
+  {
+    path: '/inbox',
+    component: InboxPage,
+    meta: { requiresAuth: true },
+  },
+  {
+    path: '/users',
+    component: UserPage,
+    meta: { requiresAuth: true },
+  },
+  {
+    path: '/staff',
+    component: StaffPage,
+    meta: { requiresAuth: true },
+  },
+  {
+    path: '/ladyproduct',
+    component: LadyProduct,
+    meta: { requiresAuth: true },
+  },
+  {
+    path: '/menproduct',
+    component: MenProduct,
+    meta: { requiresAuth: true },
+  },
+  {
+    path: '/allexpense',
+    component: ExpensePage,
+    meta: { requiresAuth: true },
+  },
+  {
+    path: '/adddesign',
+    component: AddDesign,
+    meta: { requiresAuth: true },
+  },
+  {
+    path: '/addexpense',
+    component: AddExpense,
+    meta: { requiresAuth: true },
+  },
+  {
+    path: '/addstaff',
+    component: AddStaff,
+    meta: { requiresAuth: true },
+  },
+  {
+    path: '/forgotpassword',
+    component: ForgotPassword,
+    meta: { requiresAuth: false },
+  },
+  {
+    path: '/resetpassword/:token',
+    component: ResetPassword,
+    meta: { requiresAuth: false },
+  },
 ];
 
-
 const router = createRouter({
-    history: createWebHistory(),
-    routes
-})
+  history: createWebHistory(),
+  routes,
+});
+
+router.beforeEach((to, from, next) => {
+  if (to.meta.requiresAuth &&!store.getters.user) {
+    next('/login');
+  } else {
+    next();
+  }
+});
 
 export default router;
