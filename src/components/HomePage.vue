@@ -6,7 +6,7 @@
   <div class="container text-center lg:text-left xl:px-32">
     <div class="grid items-center lg:grid-cols-2">
       <div class="me- lg:mb-2 ">
-        <h2 class="text-center mb-16 text-4xl font-bolder text-blue-900">KimsTailor's</h2>
+        <h2 class="text-center pt-6 mb-16 text-4xl font-bolder text-blue-900 headtitle" data-text="KimsTailor's">KimsTailor's</h2>
         <div
           class="relative z-[1]  block rounded-lg bg-[hsla(0,0%,100%,0.55)] px-6 py-2 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.55)] dark:shadow-black/20 md:px-12 lg:-mr-14 backdrop-blur-[30px]">
           <h2 class="mb-6 text-4xl font-bold text-black">Why is it so great?</h2>
@@ -67,5 +67,22 @@ export default {
     .fancy-border-radius {
       border-radius: 53% 47% 52% 48% / 36% 41% 59% 64%;
     }
+    .headtitle {
+      font-size: 55px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: transparent;
+      color: rgb(35, 35, 234);
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: rgb(0, 255, 13);
+      text-align: center;
+      position: relative;
+      font-family:'Monotype Corsiva','Apple Chancery','ITC Zapf Chancery','URW Chancery L',cursive;
+    
+     
+    }
+
 
 </style>
