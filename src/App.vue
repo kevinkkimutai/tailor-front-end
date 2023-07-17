@@ -1,8 +1,8 @@
 <template>
-<div>
+<div  class="topsect">
   <NavBar /> 
 
-<div class="containe text-white">
+<div class="containe topsect">
   <RouterView  />
 </div>
 </div>
@@ -41,5 +41,8 @@ margin-top: 50px;
 width: auto;
 justify-content: center;
 align-items: center;
+}
+.topcont {
+  background-image: url("./assets/bg4.jpg");
 }
 </style>

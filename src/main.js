@@ -5,6 +5,8 @@ import './index.css'
 import './axios.js'
 import store from './vuex.js'
 
+import "@fortawesome/fontawesome-free/css/all.min.css";
+
 
 createApp(App)
  .use(router)
