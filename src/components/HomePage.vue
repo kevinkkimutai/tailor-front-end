@@ -11,7 +11,7 @@
         >
           <span
             id="blackOverlay"
-            class="w-full h-full absolute opacity-75 bg-black"
+            class="w-full h-full absolute bg-black opacity-75"
           ></span>
         </div>
         <div class="container relative mx-auto">
@@ -19,12 +19,14 @@
             <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
               <div class="pr-12">
                 <h1 class="text-white font-semibold text-5xl">
-                  Your story starts with us.
+                  Apparel Tech's.
                 </h1>
-                <p class="mt-4 text-lg text-gray-300">
-                  This is a simple example of a Landing Page you can build using
-                  Tailwind Starter Kit. It features multiple CSS components
-                  based on the Tailwindcss design system.
+                <p class="mt-4 text-lg text-gray-100">
+                  The Apparel Management App is a comprehensive mobile application designed 
+                  to streamline and optimize the process of managing apparel businesses, from 
+                  inventory management to customer engagement. This app empowers apparel store 
+                  owners and managers with a suite of powerful tools to enhance efficiency, 
+                  reduce costs, and boost customer satisfaction.
                 </p>
               </div>
             </div>
@@ -47,8 +49,8 @@
           </svg>
         </div>
       </div>
-      <section class="pb-20 bg-gray-300 bg-center bg-cover topsect -mt-24">
-        <div class="container mx-auto opacity-75 px-4">
+      <section class="pb-20  -mt-24">
+        <div class="container mx-auto opacity-100 px-4">
           <div class="flex flex-wrap">
             <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
               <div
@@ -148,10 +150,6 @@
                     class="absolute left-0 w-full block"
                     style="height: 95px; top: -94px;"
                   >
-                    <polygon
-                      points="-30,95 583,95 583,65"
-                      class="text-pink-600 fill-current"
-                    ></polygon>
                   </svg>
                   <h4 class="text-xl font-bold text-white ">
                     Top Notch Services
@@ -181,10 +179,7 @@
             x="0"
             y="0"
           >
-            <polygon
-              class="text-white fill-current"
-              points="2560 0 2560 100 0 100"
-            ></polygon>
+
           </svg>
         </div>
         <div class="container mx-auto px-4">
@@ -192,8 +187,8 @@
             <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
               <img
                 alt="..."
-                class="max-w-full rounded-lg shadow-lg"
-                src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80"
+                class="max-w-full rounded-lg shadow-lg "
+                src="../assets/trauser2.jpeg"
               />
             </div>
             <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
@@ -203,8 +198,8 @@
                 >
                   <i class="fas fa-rocket text-xl"></i>
                 </div>
-                <h3 class="text-3xl text-black font-semibold">A growing company</h3>
-                <p class="mt-4 text-lg leading-relaxed text-gray-600">
+                <h3 class="text-3xl text-white font-semibold">A growing company</h3>
+                <p class="mt-4 text-lg leading-relaxed text-gray-400">
                   The extension comes with three pre-built pages to help you get
                   started faster. You can change the text and images and you're
                   good to go.
@@ -219,7 +214,7 @@
                         ></span>
                       </div>
                       <div>
-                        <h4 class="text-gray-600">
+                        <h4 class="text-gray-500">
                           Carefully crafted components
                         </h4>
                       </div>
@@ -234,7 +229,7 @@
                         ></span>
                       </div>
                       <div>
-                        <h4 class="text-gray-600">Amazing page examples</h4>
+                        <h4 class="text-gray-500">Amazing page examples</h4>
                       </div>
                     </div>
                   </li>
@@ -261,7 +256,7 @@
         <div class="container mx-auto px-4">
           <div class="flex flex-wrap justify-center text-center mb-24">
             <div class="w-full lg:w-6/12 px-4">
-              <h2 class="text-4xl text-black font-semibold">Here are our heroes</h2>
+              <h2 class="text-4xl text-white font-semibold">Here are our heroes</h2>
               <p class="text-lg leading-relaxed m-4 text-gray-600">
                 According to the National Oceanic and Atmospheric
                 Administration, Ted, Scambos, NSIDClead scentist, puts the
@@ -423,10 +418,7 @@
             x="0"
             y="0"
           >
-            <polygon
-              class="text-gray-900 fill-current"
-              points="2560 0 2560 100 0 100"
-            ></polygon>
+
           </svg>
         </div>
         <div class="container mx-auto px-4 lg:pt-24 lg:pb-64">
@@ -495,9 +487,7 @@
                   <h4 class="text-black text-2xl font-semibold">Want to work with us?</h4>
                   <p class="leading-relaxed mt-1 mb-4 text-gray-600">
                     Complete this form and we will get back to you in 24 hours.
-                  </p>.topcont {
-  background-image: url("../assets/bg3.jpg");
-}
+                  </p>
                   <div class="relative w-full mb-3 mt-8">
                     <label
                       class="block uppercase text-gray-700 text-xs font-bold mb-2"
@@ -565,7 +555,7 @@ export default {
 </script>
 <style lang="css" scoped>
 .topcont {
-  background-image: url("../assets/bg3.jpg");
+  background-image: url("../assets/bg4.jpg");
 }
 .topsect {
   background-image: url("../assets/bg4.jpg");

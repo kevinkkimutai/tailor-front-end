@@ -2,7 +2,7 @@
 <div  class="topsect">
   <NavBar /> 
 
-<div class="containe topsect">
+<div class="containe tops opacity-90 bg-black">
   <RouterView  />
 </div>
 </div>
@@ -42,7 +42,9 @@ width: auto;
 justify-content: center;
 align-items: center;
 }
-.topcont {
-  background-image: url("./assets/bg4.jpg");
+.topsect {
+  background-image: url("./assets/bg3.jpg");
+  background: cover;
+ opacity: 7;
 }
 </style>
