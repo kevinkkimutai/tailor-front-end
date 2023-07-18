@@ -2,7 +2,7 @@
   <div>
     <main>
       <div
-        class="relative pt-16 pb-32 flex content-center items-center justify-center "
+        class="relative pt-16 pb-32 flex content-center items-center justify-center"
         style="min-height: 75vh;"
       >
         <div
@@ -16,7 +16,7 @@
         </div>
         <div class="container relative mx-auto">
           <div class="items-center flex flex-wrap">
-            <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+            <div class="w-full lg:w-6/12 px-4 ml-auto m-auto text-center">
               <div class="pr-12">
                 <h1 class="text-white font-semibold text-5xl">
                   Apparel Tech's.
@@ -114,18 +114,18 @@
               >
                 <i class="fas fa-user-friends text-xl"></i>
               </div>
-              <h3 class="text-3xl mb-2 font-semibold leading-normal text-black">
+              <h3 class="text-3xl mb-2 font-semibold leading-normal text-white">
                 Working with us is a pleasure
               </h3>
               <p
-                class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700"
+                class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-400"
               >
                 Don't let your uses guess by attaching tooltips and popoves to
                 any element. Just make sure you enable them first via
                 JavaScript.
               </p>
               <p
-                class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700"
+                class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-400"
               >
                 The kit comes with three pre-built pages to help you get started
                 faster. You can change the text and images and you're good to
@@ -135,11 +135,11 @@
             </div>
             <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
               <div
-                class="relative flex flex-col min-w-0 break-words  w-full mb-6 shadow-lg rounded-lg bg-pink-600"
+                class="relative flex flex-col min-w-0 break-words  w-full mb-6 shadow-lg rounded-lg bg-pink-400"
               >
                 <img
                   alt="..."
-                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1051&amp;q=80"
+                  src="../assets/bg2.jpg"
                   class="w-full align-middle rounded-t-lg"
                 />
                 <blockquote class="relative p-8 mb-4">
@@ -242,7 +242,7 @@
                         ></span>
                       </div>
                       <div>
-                        <h4 class="text-gray-600">Dynamic components</h4>
+                        <h4 class="text-gray-500">Dynamic components</h4>
                       </div>
                     </div>
                   </li>
@@ -257,7 +257,7 @@
           <div class="flex flex-wrap justify-center text-center mb-24">
             <div class="w-full lg:w-6/12 px-4">
               <h2 class="text-4xl text-white font-semibold">Here are our heroes</h2>
-              <p class="text-lg leading-relaxed m-4 text-gray-600">
+              <p class="text-lg leading-relaxed m-4 text-gray-400">
                 According to the National Oceanic and Atmospheric
                 Administration, Ted, Scambos, NSIDClead scentist, puts the
                 potentially record maximum.
@@ -274,7 +274,7 @@
                   style="max-width: 120px;"
                 />
                 <div class="pt-6 text-center">
-                  <h5 class="text-xl text-black font-bold">Ryan Tompson</h5>
+                  <h5 class="text-xl text-white font-bold">Ryan Tompson</h5>
                   <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
                     Web Developer
                   </p>
@@ -308,7 +308,7 @@
                   style="max-width: 120px;"
                 />
                 <div class="pt-6 text-center">
-                  <h5 class="text-black text-xl font-bold">Romina Hadid</h5>
+                  <h5 class="text-white text-xl font-bold">Romina Hadid</h5>
                   <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
                     Marketing Specialist
                   </p>
@@ -337,7 +337,7 @@
                   style="max-width: 120px;"
                 />
                 <div class="pt-6 text-center">
-                  <h5 class="text-black text-xl font-bold">Alexa Smith</h5>
+                  <h5 class="text-white text-xl font-bold">Alexa Smith</h5>
                   <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
                     UI/UX Designer
                   </p>
@@ -371,7 +371,7 @@
                   style="max-width: 120px;"
                 />
                 <div class="pt-6 text-center">
-                  <h5 class="text-black text-xl font-bold">Jenna Kardi</h5>
+                  <h5 class="text-white text-xl font-bold">Jenna Kardi</h5>
                   <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
                     Founder and CEO
                   </p>
@@ -404,7 +404,7 @@
           </div>
         </div>
       </section>
-      <section class="pb-20 relative block bg-gray-900">
+      <section class="pb-20 relative block ">
         <div
           class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
           style="height: 80px;"
@@ -425,7 +425,7 @@
           <div class="flex flex-wrap text-center justify-center">
             <div class="w-full lg:w-6/12 px-4">
               <h2 class="text-4xl font-semibold text-white">Build something</h2>
-              <p class="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
+              <p class="text-lg leading-relaxed mt-4 mb-4 text-gray-400">
                 Put the potentially record low maximum sea ice extent tihs year
                 down to low ice. According to the National Oceanic and
                 Atmospheric Administration, Ted, Scambos.
@@ -442,7 +442,7 @@
               <h6 class="text-xl mt-5 font-semibold text-white">
                 Excelent Services
               </h6>
-              <p class="mt-2 mb-4 text-gray-500">
+              <p class="mt-2 mb-4 text-gray-400">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
@@ -456,7 +456,7 @@
               <h5 class="text-xl mt-5 font-semibold text-white">
                 Grow your market
               </h5>
-              <p class="mt-2 mb-4 text-gray-500">
+              <p class="mt-2 mb-4 text-gray-400">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
@@ -468,7 +468,7 @@
                 <i class="fas fa-lightbulb text-xl"></i>
               </div>
               <h5 class="text-xl mt-5 font-semibold text-white">Launch time</h5>
-              <p class="mt-2 mb-4 text-gray-500">
+              <p class="mt-2 mb-4 text-gray-400">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
@@ -476,21 +476,21 @@
           </div>
         </div>
       </section>
-      <section class="relative block py-24 lg:pt-0 bg-gray-900">
+      <section class="relative block py-24 lg:pt-0 ">
         <div class="container mx-auto px-4">
           <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
             <div class="w-full lg:w-6/12 px-4">
               <div
-                class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300"
+                class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-800"
               >
                 <div class="flex-auto p-5 lg:p-10">
                   <h4 class="text-black text-2xl font-semibold">Want to work with us?</h4>
-                  <p class="leading-relaxed mt-1 mb-4 text-gray-600">
+                  <p class="leading-relaxed mt-1 mb-4 text-gray-300">
                     Complete this form and we will get back to you in 24 hours.
                   </p>
                   <div class="relative w-full mb-3 mt-8">
                     <label
-                      class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                      class="block uppercase text-gray-200 text-xs font-bold mb-2"
                       for="full-name"
                       >Full Name</label
                     ><input
@@ -502,7 +502,7 @@
                   </div>
                   <div class="relative w-full mb-3">
                     <label
-                      class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                      class="block uppercase text-gray-200 text-xs font-bold mb-2"
                       for="email"
                       >Email</label
                     ><input
@@ -514,13 +514,13 @@
                   </div>
                   <div class="relative w-full mb-3">
                     <label
-                      class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                      class="block uppercase text-gray-200 text-xs font-bold mb-2"
                       for="message"
                       >Message</label
                     ><textarea
                       rows="4"
                       cols="80"
-                      class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
+                      class="border-0 px-3 py-3 placeholder-gray-400 text-gray-900 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
                       placeholder="Type a message..."
                     ></textarea>
                   </div>
