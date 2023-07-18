@@ -17,7 +17,7 @@
         <div class="container relative mx-auto">
           <div class="items-center flex flex-wrap">
             <div class="w-full lg:w-6/12 px-4 ml-auto m-auto text-center">
-              <div class="pr-12">
+              <div class="pr-2">
                 <h1 class="text-white font-semibold text-5xl">
                   Apparel Tech's.
                 </h1>
