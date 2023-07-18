@@ -1,17 +1,17 @@
 <template>
-  <div>
-    <main>
+  <div class="topcont">
+    <main class="bg-black opacity-90">
       <div
         class="relative pt-16 pb-32 flex content-center items-center justify-center"
         style="min-height: 75vh;"
       >
         <div
-          class="absolute top-0 w-full h-full bg-center bg-cover topcont"
+          class="absolute top-0 w-full h-full bg-center bg-cover topsect"
           
         >
           <span
             id="blackOverlay"
-            class="w-full h-full absolute bg-black opacity-75"
+            class="w-full h-full absolute bg-black opacity-60"
           ></span>
         </div>
         <div class="container relative mx-auto">
@@ -555,7 +555,7 @@ export default {
 </script>
 <style lang="css" scoped>
 .topcont {
-  background-image: url("../assets/bg4.jpg");
+  background-image: url("../assets/bg3.jpg");
 }
 .topsect {
   background-image: url("../assets/bg4.jpg");

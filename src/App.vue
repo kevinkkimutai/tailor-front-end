@@ -1,8 +1,8 @@
 <template>
-<div  class="topsect">
+<div  class="topset">
   <NavBar /> 
 
-<div class="containe tops opacity-90 bg-black">
+<div class="containe tops ">
   <RouterView  />
 </div>
 </div>
@@ -48,3 +48,4 @@ align-items: center;
  opacity: 7;
 }
 </style>
+
