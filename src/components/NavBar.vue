@@ -1,7 +1,7 @@
 <template>
 
 
-   <nav class="fixed top-0 z-50 w-full navbar">
+   <nav class="fixed top-0 z-50 w-full bg-white">
   <div class="px-2 py-2 lg:px-5 lg:pl-3">
     <div class="flex items-center justify-between">
       <div class="flex items-center justify-start">
@@ -199,8 +199,6 @@ export default {
 </script>
 
 <style scoped>
-.navbar {
-   background: rgba(255, 255, 255, 0.733);
-}
+
 
 </style>

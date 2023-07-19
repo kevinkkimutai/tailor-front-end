@@ -2,8 +2,8 @@
     <!-- component -->
 <section class="items-stretch text-white bg-center bg-cover bg-no-repeat logimage">   
   <div
-  class="relative  pt-16  flex content-center items-center justify-center"
-  style="min-height: 92.3vh;"
+  class="relative  flex content-center items-center justify-center"
+  style="min-height: 94.5vh;"
 >
   <div
     class="absolute top-0 w-full h-full"
@@ -59,7 +59,7 @@
                         <input type="password" id="input-group-3" v-model="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter password" required>
                     </div>
                     <div class="text-right text-blue-600 hover:underline hover:text-gray-500">
-                        <a href="#">Already have an Account?</a>
+                        <a href="/login">Already have an Account?</a>
                     </div>
                     <div class="px-5 pb-2 pt-4">
                         <button class="uppercase block w-full p-2 text-lg rounded-full bg-indigo-500 hover:bg-indigo-600 focus:outline-none">sign Up</button>

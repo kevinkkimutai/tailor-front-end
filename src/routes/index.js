@@ -17,29 +17,20 @@ import ForgotPassword from '../components/auth/ForgotPassword.vue';
 import ResetPassword from '../components/auth/ResetPassword.vue';
 
 const routes = [
-  {
-    path: '/login',
-    component: LoginPage,
-    meta: { requiresAuth: false },
-  },
-  {
-    path: '/signup',
-    component: SignupPage,
-    meta: { requiresAuth: false },
-  },
+ 
   {
     path: '/',
     component: HomePage,
     meta: { requiresAuth: false },
   },
   {
-    path: '/dashboard',
-    component: DashBoard,
+    path: '/inbox',
+    component: InboxPage,
     meta: { requiresAuth: true },
   },
   {
-    path: '/inbox',
-    component: InboxPage,
+    path: '/dashboard',
+    component: DashBoard,
     meta: { requiresAuth: true },
   },
   {
@@ -92,6 +83,16 @@ const routes = [
     component: ResetPassword,
     meta: { requiresAuth: false },
   },
+  {
+    path: '/login',
+    component: LoginPage,
+    meta: { requiresAuth: false },
+  },
+  {
+    path: '/signup',
+    component: SignupPage,
+    meta: { requiresAuth: false },
+  },
 ];
 
 const router = createRouter({
@@ -100,8 +101,8 @@ const router = createRouter({
 });
 
 router.beforeEach((to, from, next) => {
-  if (to.meta.requiresAuth &&!store.getters.user) {
-    next('/login');
+  if (to.meta.requiresAuth && store.getters.user) {
+    next();
   } else {
     next();
   }

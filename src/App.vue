@@ -42,10 +42,6 @@ width: auto;
 justify-content: center;
 align-items: center;
 }
-.topset {
-  background: transparent;
-  background: cover;
- opacity: 7;
-}
+
 </style>
 
