@@ -16,7 +16,6 @@
     ></span>
   </div>
   <div class="container relative mx-auto">
-    <img src="../../assets/dress22.png" class="h-8 mr-3" alt="FlowBite Logo" />
     <div class="items-center flex flex-wrap">
       <div class="w-full lg:w-6/12 px-4 ml-auto m-auto text-center">
         <div class="pr-2">
@@ -25,7 +24,7 @@
           </h1>
           <h1 class="text-white font-semibold text-3xl pb-6">LOGIN</h1>
            <!-- alert -->
-           <error class="p-5" v-if="error" :error="error"/>
+           <error class="p-b" v-if="error" :error="error"/>
   <!-- end -->
           <form @submit.prevent="login" class="sm:w-2/3 w-full px-14 lg:px-0 mx-auto">
              

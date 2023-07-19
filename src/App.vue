@@ -42,8 +42,8 @@ width: auto;
 justify-content: center;
 align-items: center;
 }
-.topsect {
-  background-image: url("./assets/bg3.jpg");
+.topset {
+  background: transparent;
   background: cover;
  opacity: 7;
 }
