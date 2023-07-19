@@ -1,8 +1,8 @@
 <template>
-<div  class="topset">
+<div  class="topset dark ">
   <NavBar /> 
 
-<div class="containe tops ">
+<div class="containe tops dark:bg-dark-900 ">
   <RouterView  />
 </div>
 </div>
