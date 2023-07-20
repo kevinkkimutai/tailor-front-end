@@ -69,9 +69,11 @@
 <div class="flex flex-wrap -mx-3 mb-4">
 
 <div class="w-full xl:w-1/3 px-3">
-  <p class="text-xl font-semibold mb-4">Recent Sales</p>
 
   <div class="w-full dark:bg-gray-800 shadow-sm rounded-lg p-4 mb-8 xl:mb-0">
+    <div class="flex items-center justify-between mb-4">
+        <h5 class="text-xl font-bold leading-none text-gray-900 dark:text-white">Recent Sales</h5>
+   </div>
     <canvas id="buyers-chart" width="600" height="400"></canvas>
     <div class="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800">
             <p class="text-2xl text-gray-400 dark:text-gray-500">Dtails about the graph</p>
@@ -81,9 +83,11 @@
 </div>
 
 <div class="w-full xl:w-1/3 px-3">
-  <p class="text-xl font-semibold mb-4">Recent Reviews</p>
 
   <div class="w-full dark:bg-gray-800 shadow-sm rounded-lg p-4 mb-8 xl:mb-0">
+    <div class="flex items-center justify-between mb-4">
+        <h5 class="text-xl font-bold leading-none text-gray-900 dark:text-white">Recent Reviews</h5>
+   </div>
     <canvas id="reviews-chart" width="600" height="400"></canvas>
     <div class="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800">
             <p class="text-2xl text-gray-400 dark:text-gray-500">Dtails about the graph</p>
@@ -93,17 +97,17 @@
 
 
 <!-- Latest Products -->
-
-<div class="w-1/3 max-w-md p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
-    <div class="flex items-center justify-between mb-4">
-        <h5 class="text-xl font-bold leading-none text-gray-900 dark:text-white">Latest Customers</h5>
-        <a href="#" class="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">
+<div class="w-full xl:w-1/3 px-3">
+    <div class="w-full max-w-md  bg-white  rounded-lg shadow sm:p-4 p-4 dark:bg-gray-800 dark:border-gray-700">
+        <div class="flex items-center justify-between mb-4">
+        <h5 class="text-xl font-bold leading-none text-gray-900 dark:text-white">Latest Products</h5>
+        <a href="#" class="text-sm font-medium  text-blue-600 hover:underline dark:text-blue-500">
             View all
         </a>
    </div>
    <div class="flow-root">
-        <ul role="list" class="divide-y divide-gray-200 dark:divide-gray-700">
-            <li class="py-3 sm:py-4">
+        <ul role="list" class="divide-y divide-gray-200 me-4 dark:divide-gray-700">
+            <li class="w-full py-3 sm:py-4">
                 <div class="flex items-center space-x-4">
                     <div class="flex-shrink-0">
                         <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-1.jpg" alt="Neil image">
@@ -116,12 +120,13 @@
                             email@windster.com
                         </p>
                     </div>
+
                     <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
                         $320
                     </div>
                 </div>
             </li>
-            <li class="py-3 sm:py-4">
+            <li class="w-full py-3 sm:py-4">
                 <div class="flex items-center space-x-4">
                     <div class="flex-shrink-0">
                         <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-3.jpg" alt="Bonnie image">
@@ -139,7 +144,25 @@
                     </div>
                 </div>
             </li>
-            <li class="py-3 sm:py-4">
+            <li class="w-full py-3 sm:py-4">
+                <div class="flex items-center space-x-4">
+                    <div class="flex-shrink-0">
+                        <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-2.jpg" alt="Michael image">
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                            Michael Gough
+                        </p>
+                        <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                            email@windster.com
+                        </p>
+                    </div>
+                    <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                        $67
+                    </div>
+                </div>
+            </li>
+            <li class="w-full py-3 sm:py-4">
                 <div class="flex items-center space-x-4">
                     <div class="flex-shrink-0">
                         <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-4.jpg" alt="Lana image">
@@ -152,12 +175,12 @@
                             email@windster.com
                         </p>
                     </div>
-                    <div class="inline-flex px-14 items-center text-base font-semibold text-gray-900 dark:text-white">
+                    <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
                         $367
                     </div>
                 </div>
             </li>
-            <li class="pt-3 pb-0 sm:pt-4">
+            <li class="w-full pt-3 pb-0 sm:pt-4">
                 <div class="flex items-center space-x-4">
                     <div class="flex-shrink-0">
                         <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-5.jpg" alt="Thomas image">
@@ -177,7 +200,15 @@
             </li>
         </ul>
    </div>
+
+
+
+
+  </div>
 </div>
+
+<!-- end of row -->
+
 
 
 
@@ -187,9 +218,13 @@
 <div class="flex flex-wrap -mx-3 mb-4">
 <!-- all users section -->
 <div class="w-full xl:w-2/3 px-3">
-  <p class="text-xl font-semibold mb-4">All Expenses</p>
   <div class="w-full dark:bg-gray-800 shadow-sm rounded-lg p-4">
-
+    <div class="flex items-center justify-between mb-4">
+        <h5 class="text-xl font-bold leading-none text-gray-900 dark:text-white">Expenses</h5>
+        <a href="#" class="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">
+            View all
+        </a>
+   </div>
     <div class="w-full bg-gray-100 shadow-sm rounded-lg flex justify-between items-center px-4 py-2 mb-4">
         <div>
             <p class="font-semibold text-xl text-gray-900 dark:text-gray-500">Kelvin Brent</p>
@@ -226,9 +261,13 @@
 
 <!-- resent transactions card -->
 <div class="w-full xl:w-1/3 px-3">
-  <p class="text-xl font-semibold mb-4">Recent Transactions</p>
   <div class="w-full dark:bg-gray-800 shadow-sm rounded-lg p-4">
-
+    <div class="flex items-center justify-between mb-4">
+        <h5 class="text-xl font-bold leading-none text-gray-900 dark:text-white">Recent Transactions</h5>
+        <a href="#" class="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">
+            View all
+        </a>
+   </div>
     <div class="w-full bg-gray-100 shadow-sm rounded-lg flex justify-between items-center px-4 py-2 mb-4">
         <div>
             <p class="font-semibold text-xl text-gray-900 dark:text-gray-500">Kelvin Brent</p>
@@ -270,10 +309,15 @@
 <div class="flex flex-wrap -mx-3 mb-4">
 <!-- all users section -->
 <div class="w-full xl:w-2/3 px-3">
-  <p class="text-xl font-semibold mb-3">All Users</p>
-  <div class="">
-
+  <div class="dark:bg-gray-800 rounded-lg">
+    <div class="flex items-center justify-between mb-4">
+        <h5 class="text-xl ms-4 mt-4 font-bold leading-none text-gray-900 dark:text-white">Recent Transactions</h5>
+        <a href="#" class="text-sm me-5 font-medium text-blue-600 hover:underline dark:text-blue-500">
+            View all
+        </a>
+   </div>
    <div class="relative overflow-x-auto shadow-lg sm:rounded-lg">
+
     <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
         <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-800 dark:text-gray-400">
             <tr>
@@ -415,25 +459,23 @@
 
 <!-- recent transactions card -->
 <div class="w-full xl:w-1/3 px-3">
-  <p class="text-xl font-semibold mb-3">Recent Reviews</p>
   <div class="">
   
 <div class="w-full max-w-l p-1 dark:bg-gray-800 shadow-sm shadow-sm-gray-200 rounded-lg shadow sm:p-2 dark:bg-gray-800 dark:shadow-sm-gray-700">
-    <div class="w-full bg-gray-100 shadow-sm rounded-lg flex justify-between items-center px-4 py-2 mb-0">
-        <div>
-            <h5 class="text-xl font-bold leading-none text-gray-900 dark:text-white">Latest Reviews</h5>
-        
-        </div>
+    <div class="flex items-center justify-between mb-4">
+        <h5 class="text-xl font-bold leading-none text-gray-900 dark:text-white">Recent Reviews</h5>
         <a href="#" class="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">
             View all
         </a>
-    </div>
+   </div>
  
    <div class="flow-root">
         <ul role="list" class="dark:divide-gray-700">
             <li class="py-3 sm:py-4 shadow-sm-b dark:bg-gray-800 dark:shadow-sm-gray-700">
                 <div class="flex items-center space-x-4">
-                  
+                    <div class="flex-shrink-0">
+                        <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-1.jpg" alt="Neil image">
+                    </div>
                     <div class="flex-1 min-w-0">
                         <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
                             Neil Sims
@@ -447,7 +489,9 @@
             </li>
             <li class="py-3 sm:py-4 shadow-sm-b dark:bg-gray-800 dark:shadow-sm-gray-700">
                 <div class="flex items-center space-x-4">
-                  
+                    <div class="flex-shrink-0">
+                        <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-1.jpg" alt="Neil image">
+                    </div>
                     <div class="flex-1 min-w-0">
                         <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
                             Neil Sims
@@ -461,7 +505,9 @@
             </li>
             <li class="py-3 sm:py-4 shadow-sm-b dark:bg-gray-800 dark:shadow-sm-gray-700">
                 <div class="flex items-center space-x-4">
-                  
+                    <div class="flex-shrink-0">
+                        <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-1.jpg" alt="Neil image">
+                    </div>
                     <div class="flex-1 min-w-0">
                         <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
                             Neil Sims
@@ -475,7 +521,9 @@
             </li>
             <li class="py-3 sm:py-4 shadow-sm-b dark:bg-gray-800 dark:shadow-sm-gray-700">
                 <div class="flex items-center space-x-4">
-                  
+                    <div class="flex-shrink-0">
+                        <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-1.jpg" alt="Neil image">
+                    </div>
                     <div class="flex-1 min-w-0">
                         <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
                             Neil Sims
