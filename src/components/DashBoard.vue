@@ -217,88 +217,90 @@
 <!-- Third row -->
 <div class="flex flex-wrap -mx-3 mb-4">
 <!-- all users section -->
-<div class="w-full xl:w-2/3 px-3">
-  <div class="w-full dark:bg-gray-800 shadow-sm rounded-lg p-4">
+<div class="w-full xl:w-2/3 px-3 mb-3">
+  <div class="w-full dark:bg-gray-800 shadow-sm rounded-lg p-3">
     <div class="flex items-center justify-between mb-4">
         <h5 class="text-xl font-bold leading-none text-gray-900 dark:text-white">Expenses</h5>
         <a href="#" class="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">
             View all
         </a>
    </div>
-    <div class="w-full bg-gray-100 shadow-sm rounded-lg flex justify-between items-center px-4 py-2 mb-4">
+    <div class="w-full bg-gray-700 shadow-sm rounded-lg flex justify-between items-center px-4 py-1 mb-4">
         <div>
-            <p class="font-semibold text-xl text-gray-900 dark:text-gray-500">Kelvin Brent</p>
-            <p class="text-gray-500 dark:text-gray-500">Product 1</p>
+            <p class="font-semibold text-xl text-gray-900 dark:text-gray-200">Kelvin Brent</p>
+            <p class="text-gray-500 dark:text-gray-400">Product 1</p>
         </div>
-        <span class="text-green-500 font-semibold text-lg">$25.00</span>
+        <span class="text-green-400 font-semibold text-lg">$25.00</span>
     </div>
 
-    <div class="w-full bg-gray-100 shadow-sm rounded-lg flex justify-between items-center px-4 py-2 mb-4">
+    <div class="w-full bg-gray-700 shadow-sm rounded-lg flex justify-between items-center px-4 py-1 mb-4">
         <div>
-            <p class="font-semibold text-xl text-gray-900 dark:text-gray-500">Joseph Brent</p>
-            <p class="text-gray-500 dark:text-gray-600">Product 34</p>
+            <p class="font-semibold text-xl text-gray-900 dark:text-gray-200">Joseph Brent</p>
+            <p class="text-gray-500 dark:text-gray-400">Product 34</p>
         </div>
         <span class="text-red-500 font-semibold text-lg">$74.99</span>
     </div>
 
-    <div class="w-full bg-gray-100 shadow-sm rounded-lg flex justify-between items-center px-4 py-2 mb-4">
+    <div class="w-full bg-gray-700 shadow-sm rounded-lg flex justify-between items-center px-4 py-1 mb-4">
         <div>
-            <p class="font-semibold text-xl text-gray-900 dark:text-gray-500">Jacob Bator</p>
-            <p class="text-gray-500 dark:text-gray-500">Product 23</p>
+            <p class="font-semibold text-xl text-gray-900 dark:text-gray-200">Jacob Bator</p>
+            <p class="text-gray-500 dark:text-gray-400">Product 23</p>
         </div>
-        <span class="text-green-500 font-semibold text-lg">$14.95</span>
+        <span class="text-green-400 font-semibold text-lg">$14.95</span>
     </div>
 
-    <div class="w-full bg-gray-100 shadow-sm rounded-lg flex justify-between items-center px-4 py-2">
+    <div class="w-full bg-gray-700 shadow-sm rounded-lg flex justify-between items-center px-4 py-1">
         <div>
-            <p class="font-semibold text-xl text-gray-900 dark:text-gray-500">Alex Mason</p>
-            <p class="text-gray-500 dark:text-gray-500">Product 66</p>
+            <p class="font-semibold text-xl text-gray-900 dark:text-gray-200">Alex Mason</p>
+            <p class="text-gray-500 dark:text-gray-400">Product 66</p>
         </div>
-        <span class="text-green-500 font-semibold text-lg">$44.99</span>
+        <span class="text-green-400 font-semibold text-lg">$44.99</span>
     </div>
   </div>
 </div>
 
 <!-- resent transactions card -->
 <div class="w-full xl:w-1/3 px-3">
-  <div class="w-full dark:bg-gray-800 shadow-sm rounded-lg p-4">
+  <div class="w-full dark:bg-gray-800 shadow-sm rounded-lg p-3">
     <div class="flex items-center justify-between mb-4">
         <h5 class="text-xl font-bold leading-none text-gray-900 dark:text-white">Recent Transactions</h5>
         <a href="#" class="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">
             View all
         </a>
    </div>
-    <div class="w-full bg-gray-100 shadow-sm rounded-lg flex justify-between items-center px-4 py-2 mb-4">
+   <div class="w-full bg-gray-700 shadow-sm rounded-lg flex justify-between items-center px-4 py-1 mb-4">
         <div>
-            <p class="font-semibold text-xl text-gray-900 dark:text-gray-500">Kelvin Brent</p>
-            <p class="text-gray-500 dark:text-gray-500">Product 1</p>
+            <p class="font-semibold text-xl text-gray-900 dark:text-gray-200">Kelvin Brent</p>
+            <p class="text-gray-500 dark:text-gray-400">Date and time</p>
         </div>
-        <span class="text-green-500 font-semibold text-lg">$25.00</span>
+        <span class="text-green-400 font-semibold text-lg">$25.00</span>
     </div>
 
-    <div class="w-full bg-gray-100 shadow-sm rounded-lg flex justify-between items-center px-4 py-2 mb-4">
+    <div class="w-full bg-gray-700 shadow-sm rounded-lg flex justify-between items-center px-4 py-1 mb-4">
         <div>
-            <p class="font-semibold text-xl text-gray-900 dark:text-gray-500">Joseph Brent</p>
-            <p class="text-gray-500 dark:text-gray-600">Product 34</p>
+            <p class="font-semibold text-xl text-gray-900 dark:text-gray-200">Joseph Brent</p>
+            <p class="text-gray-500 dark:text-gray-400">Date and time</p>
         </div>
         <span class="text-red-500 font-semibold text-lg">$74.99</span>
     </div>
 
-    <div class="w-full bg-gray-100 shadow-sm rounded-lg flex justify-between items-center px-4 py-2 mb-4">
+    <div class="w-full bg-gray-700 shadow-sm rounded-lg flex justify-between items-center px-4 py-1 mb-4">
         <div>
-            <p class="font-semibold text-xl text-gray-900 dark:text-gray-500">Jacob Bator</p>
-            <p class="text-gray-500 dark:text-gray-500">Product 23</p>
+            <p class="font-semibold text-xl text-gray-900 dark:text-gray-200">Jacob Bator</p>
+            <p class="text-gray-500 dark:text-gray-400">Date and time</p>
         </div>
-        <span class="text-green-500 font-semibold text-lg">$14.95</span>
+        <span class="text-green-400 font-semibold text-lg">$14.95</span>
     </div>
 
-    <div class="w-full bg-gray-100 shadow-sm rounded-lg flex justify-between items-center px-4 py-2">
+    <div class="w-full bg-gray-700 shadow-sm rounded-lg flex justify-between items-center px-4 py-1">
         <div>
-            <p class="font-semibold text-xl text-gray-900 dark:text-gray-500">Alex Mason</p>
-            <p class="text-gray-500 dark:text-gray-500">Product 66</p>
+            <p class="font-semibold text-xl text-gray-900 dark:text-gray-200">Alex Mason</p>
+            <p class="text-gray-500 dark:text-gray-400">Date and time</p>
         </div>
-        <span class="text-green-500 font-semibold text-lg">$44.99</span>
+        <span class="text-green-400 font-semibold text-lg">$44.99</span>
     </div>
+
+    
   </div>
 </div>
 
@@ -306,9 +308,9 @@
 
 
 <!-- Fourth row -->
-<div class="flex flex-wrap -mx-3 mb-4">
+<div class="flex flex-wrap -mx-3  mb-4">
 <!-- all users section -->
-<div class="w-full xl:w-2/3 px-3">
+<div class="w-full xl:w-2/3 px-3 mb-3">
   <div class="dark:bg-gray-800 rounded-lg">
     <div class="flex items-center justify-between mb-4">
         <h5 class="text-xl ms-4 mt-4 font-bold leading-none text-gray-900 dark:text-white">Recent Transactions</h5>
@@ -343,7 +345,7 @@
                     </div>
                 </th>
                 <th scope="col" class="px-6 py-3">
-                    <span class="sr-only">Edit</span>
+                    <span class="flex items-center">Edit</span>
                 </th>
             </tr>
         </thead>
@@ -361,7 +363,7 @@
                 <td class="px-6 py-4">
                     $2999
                 </td>
-                <td class="px-6 py-4 text-right">
+                <td class="px-6 py-4 ">
                     <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
                 </td>
             </tr>
@@ -378,7 +380,7 @@
                 <td class="px-6 py-4">
                     $1999
                 </td>
-                <td class="px-6 py-4 text-right">
+                <td class="px-6 py-4 ">
                     <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
                 </td>
             </tr>
@@ -395,7 +397,7 @@
                 <td class="px-6 py-4">
                     $99
                 </td>
-                <td class="px-6 py-4 text-right">
+                <td class="px-6 py-4 ">
                     <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
                 </td>
             </tr>
@@ -412,7 +414,7 @@
                 <td class="px-6 py-4">
                     $99
                 </td>
-                <td class="px-6 py-4 text-right">
+                <td class="px-6 py-4 ">
                     <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
                 </td>
             </tr>
@@ -429,7 +431,7 @@
                 <td class="px-6 py-4">
                     $99
                 </td>
-                <td class="px-6 py-4 text-right">
+                <td class="px-6 py-4 ">
                     <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
                 </td>
             </tr>
@@ -446,7 +448,7 @@
                 <td class="px-6 py-4">
                     $99
                 </td>
-                <td class="px-6 py-4 text-right">
+                <td class="px-6 py-4 ">
                     <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
                 </td>
             </tr>
