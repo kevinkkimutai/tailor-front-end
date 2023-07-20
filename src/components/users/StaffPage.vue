@@ -17,7 +17,7 @@
            <!-- breadcrumb end -->
 
    <div class="lg:flex justify-between items-center mb-1 ms-2">
-             <p class="text-2xl font-semibold mb-2 lg:mb-0">List of all Staff . . .</p> 
+             <p class="text-2xl font-semibold mb-2 lg:mb-0 dark:text-gray-200">List of all Staff . . .</p> 
            </div>
 
 <div class="relative overflow-x-auto shadow-md sm:rounded-lg">

@@ -1,11 +1,11 @@
 <template lang="">
-     <div class="p-1 sm:ml-52 ">
-   <div class="p-1 border-gray-200 border-dashed rounded-sm dark:border-gray-700 mt-1">
+     <div class="p-1 sm:ml-52 dark:bg-gray-900 ">
+   <div class="p-1 border-gray-200 border-dashed rounded-sm dark:border-gray-700 ">
 
  <!-- breadcrumb -->
  <nav class="text-sm font-semibold mb-1" aria-label="Breadcrumb">
               <ol class="list-none p-1 inline-flex">
-                <li class="flex i text-blue-400">
+                <li class="flex text-blue-400">
                   <a href="/Dashboard" class="text-gray-500">Dashboard</a>
                   <svg class="fill-current w-4 h-4 mx-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg>
                 </li>
@@ -17,7 +17,7 @@
             <!-- breadcrumb end -->
 
     <div class="lg:flex justify-between items-center mb-1 ms-2">
-              <p class="text-2xl font-semibold mb-2 lg:mb-0">List of all Users . . .</p> 
+              <p class="text-2xl font-semibold mb-2 dark:text-gray-200 lg:mb-0">List of all Users . . .</p> 
             </div>
 
 <div class="relative overflow-x-auto shadow-md sm:rounded-lg">

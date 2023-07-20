@@ -1,5 +1,5 @@
 <template>
-   <div class="p-1 sm:ml-52 ">
+   <div class="p-1 sm:ml-52 dark:bg-gray-900">
   <div class="p-1 border-gray-200 border-dashed rounded-sm dark:border-gray-700 mt-1">
 
 
@@ -18,7 +18,7 @@
            <!-- breadcrumb end -->
 
    <div class="lg:flex justify-center items-center mb-3 ms-2">
-             <p class="text-2xl font-semibold mb-2 lg:mb-0 text-black">Add New Design</p> 
+             <p class="text-2xl font-semibold mb-2 lg:mb-0 dark:text-gray-200">Add New Design</p> 
            </div>
 
 
@@ -26,22 +26,22 @@
 
 <div class="formbold-main-wrapper">
 
-  <div class="formbold-form-wrapper bg-gray-300 rounded-lg">
-    <h1 class="text-black mb-2 text-center font-bold">ADD DESIGN</h1>
+  <div class="formbold-form-wrapper bg-gray-300 dark:bg-gray-800 rounded-lg">
+    <h1 class="text-black mb-2 text-center font-bold dark:text-gray-200">ADD DESIGN</h1>
     <form action="https://formbold.com/s/FORM_ID" method="POST" class="p-2">
         <div class="formbold-input-flex">
           <div>
-              <label for="design" class="formbold-form-label"> Design Name </label>
+              <label for="design" class="formbold-form-label dark:text-gray-200"> Design Name </label>
               <input
               type="text"
               name="design" 
               id="design"
               placeholder="Design Name"
-              class="formbold-form-input"
+              class="formbold-form-input dark:text-gray-200 dark:bg-gray-700"
               />
           </div>
         </div>
-        <label for="design" class="formbold-form-label"> Design Image </label>
+        <label for="design" class="formbold-form-label dark:text-gray-200"> Design Image </label>
         <div class="flex items-center justify-center w-full">
     <label for="dropzone-file" class="flex flex-col items-center justify-center w-full h-34 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
         <div class="flex flex-col items-center justify-center pt-5 pb-6">
@@ -53,13 +53,13 @@
     </label>
 </div>   
         <div>
-            <label for="message" class="formbold-form-label"> Design Description </label>
+            <label for="message" class="formbold-form-label mt-2 dark:text-gray-200"> Design Description </label>
             <textarea
                 rows="4"
                 name="message"
                 id="message"
                 placeholder="Type the Description here"
-                class="formbold-form-input"
+                class="formbold-form-input dark:bg-gray-700 dark:text-gray-200"
             ></textarea>
         </div>
 

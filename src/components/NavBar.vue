@@ -1,7 +1,7 @@
 <template>
 
 
-   <nav class="fixed top-0 z-50 w-full bg-white dark:bg-gray-800">
+   <nav class="fixed top-0 z-50 w-full bg-white dark:bg-gray-900">
   <div class="px-2 py-2 lg:px-5 lg:pl-3">
     <div class="flex items-center justify-between">
       <div class="flex items-center justify-start">
@@ -61,8 +61,8 @@
   </div>
 </nav>
 
-<aside v-if="user" id="logo-sidebar" class="fixed top-0 left-0 z-40 w-52 h-screen pt-16 transition-transform -translate-x-full bg-white border-r border-gray-200 sm:translate-x-0 dark:bg-gray-800 dark:border-gray-700" aria-label="Sidebar">
-   <div class="h-full px-1 pb-4 overflow-y-auto bg-white dark:bg-gray-800">
+<aside v-if="user" id="logo-sidebar" class="fixed top-0 left-0 z-40 w-52 h-screen pt-16 transition-transform -translate-x-full bg-white border-r border-gray-200 sm:translate-x-0 dark:bg-gray-900 dark:border-gray-700" aria-label="Sidebar">
+   <div class="h-full px-1 pb-4 overflow-y-auto bg-white dark:bg-gray-900">
       <ul class="space-y-2 font-medium">
          <li>
             <a href="/dashboard" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
@@ -167,7 +167,7 @@
             </ul>
          </li>
       </ul>
-      <div class="fixed bottom-0 left-0 z-50 flex justify-between w-full p-1 border-t border-gray-200 bg-gray-300 dark:bg-gray-700 dark:border-gray-600">
+      <div class="fixed bottom-0 left-0 z-50 flex justify-between w-full p-1 border-t border-gray-200 bg-gray-300 dark:bg-gray-900 dark:border-gray-600">
         <p class="items-center text-sm font-normal text-blue-800 dark:text-blue-500 hover:underline"> @ KimsTech -- Kelvin Kimutai --.</p>
       </div>
    </div>

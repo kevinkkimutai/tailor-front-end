@@ -1,6 +1,6 @@
 <template lang="">
-    <div class="p-1 sm:ml-52 ">
-     <div class="p-1 border-gray-200 border-dashed rounded-sm dark:border-gray-700 mt-1">
+    <div class="p-1 sm:ml-52 dark:bg-gray-900">
+     <div class="p-1 border-gray-200 border-dashed rounded-sm dark:border-gray-700 ">
    
    
    <!-- breadcrumb -->
@@ -18,13 +18,13 @@
               <!-- breadcrumb end -->
    
       <div class="lg:flex justify-between items-center mb-3 ms-2">
-                <p class="text-2xl font-semibold mb-2 lg:mb-0">Men Designs . . .</p> 
+                <p class="text-2xl font-semibold mb-2 dark:text-gray-200 lg:mb-0">Men Designs . . .</p> 
               </div>
    
    <!-- product section -->
    
-   <div class="lg:flex justify-between items-center ms-10">
-                <p class="text-2xl font-semibold mb-2 lg:mb-0 text-gray-600"><span class="text-gray-400">1.</span> TRAUSERS</p> 
+   <div class="lg:flex justify-between items-center">
+                <p class="text-2xl font-semibold mb-2 lg:mb-0 text-gray-300"><span class="text-gray-300">1.</span> TRAUSERS</p> 
               </div>
     <div class="flex flex-wrap -mx-3 mb-4">
      
@@ -80,8 +80,8 @@
    <!-- end of dresss -->
    
    <!-- start trausers -->
-   <div class="lg:flex justify-between items-center ms-10">
-                <p class="text-2xl font-semibold mb-2 lg:mb-0 text-gray-600"><span class="text-gray-400">2.</span> SHIRTS</p> 
+   <div class="lg:flex justify-between items-center">
+                <p class="text-2xl font-semibold mb-2 lg:mb-0 text-gray-300"><span class="text-gray-300">2.</span> SHIRTS</p> 
               </div>
     <div class="flex flex-wrap -mx-3 mb-4">
      

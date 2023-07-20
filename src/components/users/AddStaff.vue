@@ -17,50 +17,52 @@
             </nav> 
             <!-- breadcrumb end -->
  
-    <div class="lg:flex justify-center items-center mb-3 ms-2">
-              <p class="text-2xl font-semibold mb-2 lg:mb-0 text-black">Add New Staff</p> 
-            </div>
+ 
  
  
  <!-- card -->
  <!-- form strat -->
  <div class="formbold-main-wrapper">
-    <div class="formbold-form-wrapper bg-gray-300 rounded-lg">
+  
+    <div class="formbold-form-wrapper bg-gray-300 dark:bg-gray-800 rounded-lg">
+      <div class="lg:flex justify-center items-center mb-3 ms-2">
+              <p class="text-2xl font-semibold mb-2 pt-2 lg:mb-0 dark:text-gray-200 text-black">Add New Staff</p> 
+            </div>
 <form class="p-2">
     <div class="grid gap-4 mb-3 md:grid-cols-2">
         <div>
             <label for="first_name" class="block mb-1    text-sm font-medium text-gray-900 dark:text-white">First name</label>
-            <input type="text" id="first_name" class="block py-2 px-3 w-full text-sm text-gray-900 rounded-lg border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600" placeholder="John" required>
+            <input type="text" id="first_name" class="dark:bg-gray-700 block py-2 px-3 w-full text-sm text-gray-900 rounded-lg border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600" placeholder="John" required>
         </div>
         <div>
             <label for="last_name" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Last name</label>
-            <input type="text" id="last_name" class="block py-2 px-3 w-full text-sm text-gray-900 rounded-lg border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600" placeholder="Doe" required>
+            <input type="text" id="last_name" class="dark:bg-gray-700 block py-2 px-3 w-full text-sm text-gray-900 rounded-lg border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600" placeholder="Doe" required>
         </div>
         
         <div>
             <label for="company" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Position</label>
-            <input type="text" id="company" class="block py-2 px-3 w-full text-sm text-gray-900 rounded-lg border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600" placeholder="Flowbite" required>
+            <input type="text" id="company" class="dark:bg-gray-700 block py-2 px-3 w-full text-sm text-gray-900 rounded-lg border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600" placeholder="Flowbite" required>
         </div>  
         <div>
             <label for="phone" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Phone number</label>
-            <input type="tel" id="phone" class="block py-2 px-3 w-full text-sm text-gray-900 rounded-lg border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600" placeholder="+254746645142" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+            <input type="tel" id="phone" class="dark:bg-gray-700 block py-2 px-3 w-full text-sm text-gray-900 rounded-lg border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600" placeholder="+254746645142" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
         </div>
     </div>
     <div class="mb-3">
         <label for="email" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Email address</label>
-        <input type="email" id="email" class="block py-2 px-3 w-full text-sm text-gray-900 rounded-lg border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600" placeholder="john.doe@company.com" required>
+        <input type="email" id="email" class="dark:bg-gray-700 block py-2 px-3 w-full text-sm text-gray-900 rounded-lg border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600" placeholder="john.doe@company.com" required>
     </div> 
     <label class="block mb-1 text-sm font-medium text-gray-900 dark:text-white" for="small_size">Profile Photo</label>
-    <input class="block w-full mb-5 text-xs text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" id="small_size" type="file">
+    <input class="dark:bg-gray-700 block w-full mb-5 text-xs text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" id="small_size" type="file">
     <!-- password -->
     <div class="grid gap-6 mb-3 md:grid-cols-2">
         <div>
             <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
-            <input type="password" name="floating_password" id="floating_password" class="block py-2 px-3 w-full text-sm text-gray-900 rounded-lg border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder="•••••••••" required />
+            <input type="password" name="floating_password" id="floating_password" class="dark:bg-gray-700 block py-2 px-3 w-full text-sm text-gray-900 rounded-lg border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder="•••••••••" required />
         </div>
         <div>
             <label for="last_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Comfirm Pasword</label>
-            <input type="password" name="repeat_password" id="floating_repeat_password" class="block py-2 px-3 w-full text-sm text-gray-900 rounded-lg border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder="•••••••••" required />
+            <input type="password" name="repeat_password" id="floating_repeat_password" class="dark:bg-gray-700 block py-2 px-3 w-full text-sm text-gray-900 rounded-lg border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder="•••••••••" required />
         </div>
         
     </div>

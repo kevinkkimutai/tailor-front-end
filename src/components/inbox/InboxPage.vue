@@ -1,6 +1,6 @@
 <template lang="">
-   <div class="p-1 sm:ml-52 ">
-   <div class="p-1 border-gray-200 border-dashed rounded-sm dark:border-gray-700 mt-1">
+   <div class="p-1 sm:ml-52 dark:bg-gray-900 dark:text-gray-200 ">
+   <div class="p-1 border-gray-200 border-dashed rounded-sm dark:border-gray-700 mt-">
 
     <!-- breadcrumb -->
          <nav class="text-sm font-semibold mb-5" aria-label="Breadcrumb">
@@ -21,7 +21,7 @@
             </div>
 
 <div class="w-1/1 p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-2 dark:bg-gray-800 dark:border-gray-700">
-  <div class="w-full bg-gray-200 border rounded-lg flex justify-between items-center px-4 py-2 mb-0">
+  <div class="w-full rounded-lg flex justify-between items-center px-4 py-2 mb-0">
         <div>
             <h5 class="text-xl font-bold leading-none text-gray-900 dark:text-white">Messages . . .</h5>
         
@@ -45,18 +45,18 @@
         <p class="text-sm text-gray-500 truncate dark:text-gray-400">
           <span class="font-semibold text-gray-900 dark:text-white">Leslie Livingston</span>
         </p>
-          <div class="text-gray-500 text-sm mb-1.5 dark:text-gray-400 pt-2 ms-2 hover:bg-gray-100 rounded-lg">
+          <div class="text-gray-500 text-sm mb-1.5 dark:text-gray-400 pt-2 ms-2  rounded-lg">
             <p class="ms-2"> mentioned you in a comment: what do you say? mentioned you in a comment: what do you say? mentioned you in a comment: what do you say?mentioned you in a comment: what do you say?</p>
           </div>
           <div class="text-xs flex flex-row text-blue-600 dark:text-blue-500">1 hour ago</div>
           <div class="me-5 flex flex-row-reverse ...">
-            <div class="ms-3 me-5 items-center text-sm font-semibold text-green-500 dark:text-white hover:underline dark:text-green-500">
+            <div class="ms-3 me-5 items-center text-sm font-semibold text-green-500  hover:underline ">
           <a href="#">Reply</a>
       </div>
-      <div class="ms-3 items-center text-sm font-semibold text-red-500 dark:text-white hover:underline dark:text-green-500">
+      <div class="ms-3 items-center text-sm font-semibold text-red-500  hover:underline ">
           <a href="#">UnRead</a>
       </div> 
-      <div class="ms-3 items-center text-sm font-semibold text-blue-600 dark:text-white hover:underline dark:text-green-500">
+      <div class="ms-3 items-center text-sm font-semibold text-blue-600  hover:underline ">
           <a href="#">Read</a>
       </div>
 </div>
@@ -75,18 +75,18 @@
         <p class="text-sm text-gray-500 truncate dark:text-gray-400">
           <span class="font-semibold text-gray-900 dark:text-white">Leslie Livingston</span>
         </p>
-        <div class="text-gray-500 text-sm mb-1.5 dark:text-gray-400 pt-2 ms-2 hover:bg-gray-100 rounded-lg">
+        <div class="text-gray-500 text-sm mb-1.5 dark:text-gray-400 pt-2 ms-2  rounded-lg">
             <p class="ms-2"> mentioned you in a comment: what do you say? mentioned you in a comment: what do you say? mentioned you in a comment: what do you say?mentioned you in a comment: what do you say?</p>
           </div>
           <div class="text-xs flex flex-row text-blue-600 dark:text-blue-500">1 hour ago</div>
           <div class="me-5 flex flex-row-reverse ...">
-            <div class="ms-3 me-5 items-center text-sm font-semibold text-green-500 dark:text-white hover:underline dark:text-green-500">
+            <div class="ms-3 me-5 items-center text-sm font-semibold text-green-500  hover:underline ">
           <a href="#">Reply</a>
       </div>
-      <div class="ms-3 items-center text-sm font-semibold text-red-500 dark:text-white hover:underline dark:text-green-500">
+      <div class="ms-3 items-center text-sm font-semibold text-red-500  hover:underline ">
           <a href="#">UnRead</a>
       </div> 
-      <div class="ms-3 items-center text-sm font-semibold text-blue-600 dark:text-white hover:underline dark:text-green-500">
+      <div class="ms-3 items-center text-sm font-semibold text-blue-600  hover:underline d">
           <a href="#">Read</a>
       </div>
 </div>
@@ -107,18 +107,18 @@
         <p class="text-sm text-gray-500 truncate dark:text-gray-400">
           <span class="font-semibold text-gray-900 dark:text-white">Leslie Livingston</span>
         </p>
-        <div class="text-gray-500 text-sm mb-1.5 dark:text-gray-400 pt-2 ms-2 hover:bg-gray-100 rounded-lg">
+        <div class="text-gray-500 text-sm mb-1.5 dark:text-gray-400 pt-2 ms-2  rounded-lg">
             <p class="ms-2"> mentioned you in a comment: what do you say? mentioned you in a comment: what do you say? mentioned you in a comment: what do you say?mentioned you in a comment: what do you say?</p>
           </div>
           <div class="text-xs flex flex-row text-blue-600 dark:text-blue-500">1 hour ago</div>
           <div class="me-5 flex flex-row-reverse ...">
-            <div class="ms-3 me-5 items-center text-sm font-semibold text-green-500 dark:text-white hover:underline dark:text-green-500">
+            <div class="ms-3 me-5 items-center text-sm font-semibold text-green-500 hover:underline ">
           <a href="#">Reply</a>
       </div>
-      <div class="ms-3 items-center text-sm font-semibold text-red-500 dark:text-white hover:underline dark:text-green-500">
+      <div class="ms-3 items-center text-sm font-semibold text-red-500  hover:underline ">
           <a href="#">UnRead</a>
       </div> 
-      <div class="ms-3 items-center text-sm font-semibold text-blue-600 dark:text-white hover:underline dark:text-green-500">
+      <div class="ms-3 items-center text-sm font-semibold text-blue-600 d hover:underline ">
           <a href="#">Read</a>
       </div>
 </div>

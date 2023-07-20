@@ -1,5 +1,5 @@
 <template>
-<div  class="topset dark ">
+<div  class="topset dark dark:bg-gray-900">
   <NavBar /> 
 
 <div class="containe tops dark:bg-dark-900 ">
@@ -37,7 +37,7 @@ async created() {
 
 <style scoped>
 .containe {
-margin-top: 50px;
+margin-top: 45px;
 width: auto;
 justify-content: center;
 align-items: center;
