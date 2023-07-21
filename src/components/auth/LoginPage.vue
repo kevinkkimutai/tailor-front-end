@@ -111,24 +111,24 @@ import Error from '../error/ErrorPage.vue';
       }
     },
     methods: {
-            async login() {
-        try {
-        // Make a POST request to the login endpoint
-      const response =  await axios.post('login', {
-          email: this.email,
-          password: this.password
-        });
-        localStorage.setItem('token', response.data.authorisation.token);
-        this.$store.dispatch('user', response.data.user);
-        this.$router.push('/dashboard')
-         // Refresh the page after a short delay (e.g., 100 milliseconds)
+      async login() {
+  try {
+    // Make a POST request to the login endpoint
+    const response = await axios.post('login', {
+      email: this.email,
+      password: this.password
+    });
+    // Store the user's token in the localStorage
+    localStorage.setItem('token', response.data.authorisation.token);
+    this.$store.dispatch('user', response.data.user);
+    // Redirect to the home page after a short delay (e.g., 100 milliseconds)
     setTimeout(() => {
-      window.location.reload();
+      this.$router.push('/dashboard');
     }, 100);
-    } catch (error) {
-           this.error = 'Invalid username/password! Try again.'
-        }
-      }
+  } catch (error) {
+    this.error = 'Invalid username/password! Try again.';
+  }
+}
        
   
     }

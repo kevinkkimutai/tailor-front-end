@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import store from '../vuex';
+
 import LoginPage from '../components/auth/LoginPage.vue';
 import SignupPage from '../components/auth/SignupPage.vue';
 import HomePage from '../components/HomePage.vue';
@@ -101,8 +101,9 @@ const router = createRouter({
 });
 
 router.beforeEach((to, from, next) => {
-  if (to.meta.requiresAuth && store.getters.user) {
-    next();
+  const token = localStorage.getItem('token');
+  if (to.meta.requiresAuth &&!token) {
+    next('/login');
   } else {
     next();
   }

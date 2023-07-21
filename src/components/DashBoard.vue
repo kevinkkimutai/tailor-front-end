@@ -110,7 +110,7 @@
             <li class="w-full py-3 sm:py-4">
                 <div class="flex items-center space-x-4">
                     <div class="flex-shrink-0">
-                        <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-1.jpg" alt="Neil image">
+                        <img class="w-8 h-8 rounded-full" src="../assets/team-1-800x800.jpg" alt="Neil image">
                     </div>
                     <div class="flex-1 min-w-0">
                         <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
@@ -129,7 +129,7 @@
             <li class="w-full py-3 sm:py-4">
                 <div class="flex items-center space-x-4">
                     <div class="flex-shrink-0">
-                        <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-3.jpg" alt="Bonnie image">
+                        <img class="w-8 h-8 rounded-full" src="../assets/team-1-800x800.jpg" alt="Bonnie image">
                     </div>
                     <div class="flex-1 min-w-0">
                         <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
@@ -147,7 +147,7 @@
             <li class="w-full py-3 sm:py-4">
                 <div class="flex items-center space-x-4">
                     <div class="flex-shrink-0">
-                        <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-2.jpg" alt="Michael image">
+                        <img class="w-8 h-8 rounded-full" src="../assets/team-1-800x800.jpg" alt="Michael image">
                     </div>
                     <div class="flex-1 min-w-0">
                         <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
@@ -165,7 +165,7 @@
             <li class="w-full py-3 sm:py-4">
                 <div class="flex items-center space-x-4">
                     <div class="flex-shrink-0">
-                        <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-4.jpg" alt="Lana image">
+                        <img class="w-8 h-8 rounded-full" src="../assets/team-1-800x800.jpg" alt="Lana image">
                     </div>
                     <div class="flex-1 min-w-0">
                         <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
@@ -183,7 +183,7 @@
             <li class="w-full pt-3 pb-0 sm:pt-4">
                 <div class="flex items-center space-x-4">
                     <div class="flex-shrink-0">
-                        <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-5.jpg" alt="Thomas image">
+                        <img class="w-8 h-8 rounded-full" src="../assets/team-1-800x800.jpg" alt="Thomas image">
                     </div>
                     <div class="flex-1 min-w-0">
                         <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
@@ -476,7 +476,7 @@
             <li class="py-3 sm:py-4 shadow-sm-b dark:bg-gray-800 dark:shadow-sm-gray-700">
                 <div class="flex items-center space-x-4">
                     <div class="flex-shrink-0">
-                        <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-1.jpg" alt="Neil image">
+                        <img class="w-8 h-8 rounded-full" src="../assets/team-1-800x800.jpg" alt="Neil image">
                     </div>
                     <div class="flex-1 min-w-0">
                         <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
@@ -492,7 +492,7 @@
             <li class="py-3 sm:py-4 shadow-sm-b dark:bg-gray-800 dark:shadow-sm-gray-700">
                 <div class="flex items-center space-x-4">
                     <div class="flex-shrink-0">
-                        <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-1.jpg" alt="Neil image">
+                        <img class="w-8 h-8 rounded-full" src="../assets/team-1-800x800.jpg" alt="Neil image">
                     </div>
                     <div class="flex-1 min-w-0">
                         <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
@@ -508,7 +508,7 @@
             <li class="py-3 sm:py-4 shadow-sm-b dark:bg-gray-800 dark:shadow-sm-gray-700">
                 <div class="flex items-center space-x-4">
                     <div class="flex-shrink-0">
-                        <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-1.jpg" alt="Neil image">
+                        <img class="w-8 h-8 rounded-full" src="../assets/team-1-800x800.jpg" alt="Neil image">
                     </div>
                     <div class="flex-1 min-w-0">
                         <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
@@ -524,7 +524,7 @@
             <li class="py-3 sm:py-4 shadow-sm-b dark:bg-gray-800 dark:shadow-sm-gray-700">
                 <div class="flex items-center space-x-4">
                     <div class="flex-shrink-0">
-                        <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-1.jpg" alt="Neil image">
+                        <img class="w-8 h-8 rounded-full" src="../assets/team-1-800x800.jpg" alt="Neil image">
                     </div>
                     <div class="flex-1 min-w-0">
                         <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
