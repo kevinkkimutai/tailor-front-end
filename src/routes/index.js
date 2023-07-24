@@ -15,6 +15,7 @@ import AddExpense from '../components/expense/AddExpense.vue';
 import AddStaff from '../components/users/AddStaff.vue';
 import ForgotPassword from '../components/auth/ForgotPassword.vue';
 import ResetPassword from '../components/auth/ResetPassword.vue';
+import AllDesigns from '../components/products/AllDesigns.vue';
 
 const routes = [
  
@@ -51,6 +52,11 @@ const routes = [
   {
     path: '/adddesign',
     component: AddDesign,
+    meta: { requiresAuth: true },
+  },
+  {
+    path: '/alldesigns',
+    component: AllDesigns,
     meta: { requiresAuth: true },
   },
   {
