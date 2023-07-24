@@ -7,8 +7,8 @@ import DashBoard from '../components/DashBoard.vue';
 import InboxPage from '../components/inbox/InboxPage.vue';
 import UserPage from '../components/users/UserPage.vue';
 import StaffPage from '../components/users/StaffPage.vue';
-import LadyProduct from '../components/products/LadyProduct.vue';
-import MenProduct from '../components/products/MenProduct.vue';
+import LadyProduct from '../components/products/LadyDesigns.vue';
+import MenProduct from '../components/products/MenDesigns.vue';
 import ExpensePage from '../components/expense/ExpensePage.vue';
 import AddDesign from '../components/products/AddDesign.vue';
 import AddExpense from '../components/expense/AddExpense.vue';
@@ -34,6 +34,11 @@ const routes = [
     meta: { requiresAuth: true },
   },
   {
+    path: '/addstaff',
+    component: AddStaff,
+    meta: { requiresAuth: true },
+  },
+  {
     path: '/users',
     component: UserPage,
     meta: { requiresAuth: true },
@@ -44,12 +49,17 @@ const routes = [
     meta: { requiresAuth: true },
   },
   {
-    path: '/ladyproduct',
+    path: '/adddesign',
+    component: AddDesign,
+    meta: { requiresAuth: true },
+  },
+  {
+    path: '/ladydesign',
     component: LadyProduct,
     meta: { requiresAuth: true },
   },
   {
-    path: '/menproduct',
+    path: '/mendesign',
     component: MenProduct,
     meta: { requiresAuth: true },
   },
@@ -59,18 +69,8 @@ const routes = [
     meta: { requiresAuth: true },
   },
   {
-    path: '/adddesign',
-    component: AddDesign,
-    meta: { requiresAuth: true },
-  },
-  {
     path: '/addexpense',
     component: AddExpense,
-    meta: { requiresAuth: true },
-  },
-  {
-    path: '/addstaff',
-    component: AddStaff,
     meta: { requiresAuth: true },
   },
   {

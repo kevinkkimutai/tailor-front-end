@@ -67,6 +67,7 @@
                <td class="px-6 py-4">
                 {{ design.description }}
                </td>
+               <td><img :src="'http://localhost:8000/storage/app/' + design.image" alt="Design Image"></td>
                <td class="px-6 py-4">
                    <div class="flex items-center">
                        <div class="amount"></div> <span class="me-1 text-black">Ksh: </span> {{ design.price }}
