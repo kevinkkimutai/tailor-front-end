@@ -53,176 +53,23 @@
                </th>
            </tr>
        </thead>
+       <!-- dapp data from designs tavle -->
        <tbody>
-           <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+           <tr v-for="(design, index) in designs" :key="design.id" class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                <td class="w-4 p-4 text-black font-bold">
-                  1.
+                  {{index + 1}}
                </td>
                <th scope="row" class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white">
                    <div class="pl-3">
-                       <div class="text-base font-semibold">Staff Food</div>
+                       <div class="text-base font-semibold">{{ design.name }}</div>
                    </div>  
                </th>
                <td class="px-6 py-4">
-                   All the employesss food
+                {{ design.description }}
                </td>
                <td class="px-6 py-4">
                    <div class="flex items-center">
-                       <div class="amount"></div> <span class="me-1 text-black">Ksh: </span> 8873
-                   </div>
-               </td>
-               <td class="px-6 py-4">
-                   <!-- Modal toggle -->
-                   <a href="#" type="button" data-modal-target="editUserModal" data-modal-show="editUserModal" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit exp</a>
-               </td>
-           </tr>
-           <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-               <td class="w-4 p-4 text-black font-bold">
-                  2.
-               </td>
-               <th scope="row" class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white">
-                   <div class="pl-3">
-                       <div class="text-base font-semibold">Staff Food</div>
-                   </div>  
-               </th>
-               <td class="px-6 py-4">
-                   All the employesss food
-               </td>
-               <td class="px-6 py-4">
-                   <div class="flex items-center">
-                       <div class="amount"></div> <span class="me-1 text-black">Ksh: </span> 1222
-                   </div>
-               </td>
-               <td class="px-6 py-4">
-                   <!-- Modal toggle -->
-                   <a href="#" type="button" data-modal-target="editUserModal" data-modal-show="editUserModal" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit exp</a>
-               </td>
-           </tr>
-           <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-               <td class="w-4 p-4 text-black font-bold">
-                  3.
-               </td>
-               <th scope="row" class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white">
-                   <div class="pl-3">
-                       <div class="text-base font-semibold">Staff Food</div>
-                   </div>  
-               </th>
-               <td class="px-6 py-4">
-                   All the employesss food
-               </td>
-               <td class="px-6 py-4">
-                   <div class="flex items-center">
-                       <div class="amount"></div> <span class="me-1 text-black">Ksh: </span> 7746
-                   </div>
-               </td>
-               <td class="px-6 py-4">
-                   <!-- Modal toggle -->
-                   <a href="#" type="button" data-modal-target="editUserModal" data-modal-show="editUserModal" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit exp</a>
-               </td>
-           </tr>
-           <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-               <td class="w-4 p-4 text-black font-bold">
-                  4.
-               </td>
-               <th scope="row" class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white">
-                   <div class="pl-3">
-                       <div class="text-base font-semibold">Staff Food</div>
-                   </div>  
-               </th>
-               <td class="px-6 py-4">
-                   All the employesss food
-               </td>
-               <td class="px-6 py-4">
-                   <div class="flex items-center">
-                       <div class="amount"></div> <span class="me-1 text-black">Ksh: </span> 2342
-                   </div>
-               </td>
-               <td class="px-6 py-4">
-                   <!-- Modal toggle -->
-                   <a href="#" type="button" data-modal-target="editUserModal" data-modal-show="editUserModal" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit exp</a>
-               </td>
-           </tr>
-           <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-               <td class="w-4 p-4 text-black font-bold">
-                  5.
-               </td>
-               <th scope="row" class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white">
-                   <div class="pl-3">
-                       <div class="text-base font-semibold">Staff Food</div>
-                   </div>  
-               </th>
-               <td class="px-6 py-4">
-                   All the employesss food
-               </td>
-               <td class="px-6 py-4">
-                   <div class="flex items-center">
-                       <div class="amount"></div> <span class="me-1 text-black">Ksh: </span> 9887
-                   </div>
-               </td>
-               <td class="px-6 py-4">
-                   <!-- Modal toggle -->
-                   <a href="#" type="button" data-modal-target="editUserModal" data-modal-show="editUserModal" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit exp</a>
-               </td>
-           </tr>
-           <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-               <td class="w-4 p-4 text-black font-bold">
-                  6.
-               </td>
-               <th scope="row" class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white">
-                   <div class="pl-3">
-                       <div class="text-base font-semibold">Staff Food</div>
-                   </div>  
-               </th>
-               <td class="px-6 py-4">
-                   All the employesss food
-               </td>
-               <td class="px-6 py-4">
-                   <div class="flex items-center">
-                       <div class="amount"></div> <span class="me-1 text-black">Ksh: </span> 8755
-                   </div>
-               </td>
-               <td class="px-6 py-4">
-                   <!-- Modal toggle -->
-                   <a href="#" type="button" data-modal-target="editUserModal" data-modal-show="editUserModal" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit exp</a>
-               </td>
-           </tr>
-           <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-               <td class="w-4 p-4 text-black font-bold">
-                  7.
-               </td>
-               <th scope="row" class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white">
-                   <div class="pl-3">
-                       <div class="text-base font-semibold">Staff Food</div>
-                   </div>  
-               </th>
-               <td class="px-6 py-4">
-                   All the employesss food
-               </td>
-               <td class="px-6 py-4">
-                   <div class="flex items-center">
-                       <div class="amount"></div> <span class="me-1 text-black">Ksh: </span> 5343
-                   </div>
-               </td>
-               <td class="px-6 py-4">
-                   <!-- Modal toggle -->
-                   <a href="#" type="button" data-modal-target="editUserModal" data-modal-show="editUserModal" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit exp</a>
-               </td>
-           </tr>
-           <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-               <td class="w-4 p-4 text-black font-bold">
-                  8.
-               </td>
-               <th scope="row" class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white">
-                   <div class="pl-3">
-                       <div class="text-base font-semibold">Staff Food</div>
-                   </div>  
-               </th>
-               <td class="px-6 py-4">
-                   All the employesss food
-               </td>
-               <td class="px-6 py-4">
-                   <div class="flex items-center">
-                       <div class="amount"></div> <span class="me-1 text-black">Ksh: </span> 2000
+                       <div class="amount"></div> <span class="me-1 text-black">Ksh: </span> {{ design.price }}
                    </div>
                </td>
                <td class="px-6 py-4">
@@ -297,8 +144,31 @@
     </div>
 </template>
 <script>
+import axios from 'axios';
+
 export default {
-   
+   name: 'ExpensePage',
+   data() {
+    return {
+      designs: [],
+      error: ''
+    };
+  },
+  methods: {
+    async handleExpense() {
+      try {
+        // Make a GET request to the designs endpoint
+        const response = await axios.get('designs');
+        this.designs = response.data;
+        console.log(response.data)
+      } catch (error) {
+        this.error = 'An error incured! Try again.';
+      }
+    }
+  },
+  mounted() {
+    this.handleExpense();
+  }
 }
 </script>
 <style lang="">
