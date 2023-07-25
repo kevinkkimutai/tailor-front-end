@@ -28,6 +28,17 @@
 
   <div class="formbold-form-wrapper bg-gray-300 dark:bg-gray-800 rounded-lg">
     <h1 class="text-black mb-2 text-center font-bold dark:text-gray-200">ADD DESIGN</h1>
+    <!-- error seection -->
+<div class="p-2">
+  <Error 
+    v-if="showNotification"
+    :show="showNotification"
+    :message="notificationMessage"
+    :notificationType="notificationType"
+  />
+</div>
+
+    <!-- add design form -->
     <form @submit.prevent="handleSubmit" class="p-2">
         <div class="formbold-input-flex">
           <div class="grid md:grid-cols-2 md:gap-6">
@@ -80,18 +91,29 @@
         
     </div>
     </div>
+
+
 </template>
 <script>
+import Error from '../error/ErrorPage.vue';
 import axios from 'axios';
 
 export default {
   name: 'AddDesign',
+  components: {
+        Error,
+        
+    },
         data() {
             return {
                 name: '',
                 description: '',
                 image: null,
                 price: '',
+                error: '',
+                showNotification: false,
+                notificationMessage: '',
+                notificationType: 'success',
             }
         },
         methods: {
@@ -105,8 +127,23 @@ export default {
 
         const response = await axios.post('design', formData);
         console.log(response.data);
+
+        // Show success notification
+        this.showNotification = true;
+        this.notificationMessage = 'Design added successfully';
+        this.notificationType = 'success';
+
+        // Reset form after successful submission
+        this.name = '';
+        this.description = '';
+        this.image = null;
+        this.price = '';
         // handle success
       } catch (error) {
+        this.showNotification = true;
+        this.notificationMessage = 'Something went wrong. Try again!';
+        this.notificationType = 'error';
+
         console.error(error);
         // handle error
       }
