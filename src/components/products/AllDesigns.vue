@@ -21,30 +21,40 @@
            </div>
 
 <!-- product section -->
-
-
- <div class="flex flex-wrap -mx-3 mb-4">
-  
-<!-- card -->
-<div class="w-full xl:w-1/2 px-3" v-for="design in designs" :key="design.id">
-  <p class="text-xl font-semibold mb-4"></p>
-    <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-    <img class="object-cover w-full pt-1 rounded-t-lg h-100 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" :src="getImageUrl(design.image)" alt="design image">
-    <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{design.name}}</h5>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{{design.description}}</p>
-        <div>
-      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{{design.price}}</p>
+<div class="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-3">
+  <!-- card -->
+  <div class="bg-white g-1 mb-1 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" v-for="design in designs" :key="design.id">
+    <a href="#" class="items-center">
+      <img class="p-8 rounded-t-lg max-h-80" :src="getImageUrl(design.image)" alt="product image" />
+    </a>
+    <div class="px-5 pb-5">
+      <a href="#">
+        <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Apple Watch Series 7 GPS, Aluminium Case, Starlight Sport</h5>
+      </a>
+      <div class="flex items-center mt-2.5 mb-5">
+        <!-- Add your SVG icons here -->
+        <!-- ... -->
+        <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
+      </div>
+      <div class="flex items-center justify-between">
+        <span class="text-3xl font-bold text-gray-900 dark:text-white">$599</span>
+        <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
+      </div>
     </div>
-    </div>
-   
-</a>
+  </div>
+</div>
 
 
+
+ 
+
+
+
+
+
 </div>
 </div>
-</div>
-</div>
+
 
 <!-- end of card -->
  </template>
