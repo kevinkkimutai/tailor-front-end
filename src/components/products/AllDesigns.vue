@@ -148,6 +148,7 @@
   </div>
   </div>
 </template>
+
 <script>
 import axios from 'axios';
 
@@ -178,17 +179,15 @@ export default {
       return image ? `http://localhost:8000/storage/${image.replace('public/', '')}` : '';
     },
     openEditModal(design) {
-      
-  this.selectedImageFile = null;
   // Make a copy of the design to avoid modifying the original data
-  this.selectedDesign = { ...design };
+  this.selectedDesign = {...design };
 
-  // Ensure all required properties are present
+  // Check if a property is missing and set it to an empty string if it is
   if (!this.selectedDesign.name) {
     this.selectedDesign.name = '';
   }
   if (!this.selectedDesign.price) {
-    this.selectedDesign.price = 0;
+    this.selectedDesign.price = '';
   }
   if (!this.selectedDesign.description) {
     this.selectedDesign.description = '';
@@ -204,62 +203,39 @@ export default {
     // edit function
     async handleEdit() {
   try {
-    const requestData = new FormData(); // Create a new FormData object
-
-    requestData.append('name', this.selectedDesign.name);
-    requestData.append('price', parseInt(this.selectedDesign.price));
-    requestData.append('description', this.selectedDesign.description);
-    
-    // Check if an image file has been selected
-    if (this.selectedImageFile) {
-      requestData.append('image', this.selectedImageFile);
+    if (!this.selectedDesign.name ||!this.selectedDesign.price ||!this.selectedDesign.description) {
+      console.error('Design name, price, and description are required.');
+      return;
     }
 
-    const response = await axios.put(`design/${this.selectedDesign.id}`, requestData, {
-      headers: { 'Content-Type': 'multipart/form-data' }, // Set content type to 'multipart/form-data'
-    });
-    console.log(response.data.errors);
+    const requestData = {
+      name: this.selectedDesign.name,
+      price: this.selectedDesign.price || '', // Set price to an empty string if it is not provided
+      description: this.selectedDesign.description,
+      image: this.selectedImageFile,
+    };
+
+
+    const response = await axios.put(`design/${this.selectedDesign.id}`, requestData);
 
     console.log('Design updated successfully.');
     console.log(response);
     this.fetchDesigns(); // Refresh designs list after successful update
     this.hideModal();
-
   } catch (error) {
     console.error('Error updating design:', error);
   }
 },
 
 
-
-
-
-
-
-
-
-
 handleImageChange(event) {
-  this.selectedImageFile = event.target.files[0]; // Store the selected File object
-  const reader = new FileReader();
-
-  reader.onloadend = () => {
-    this.selectedDesign.image = reader.result; // Store the base64 representation of the image in selectedDesign
-  };
-
-  if (this.selectedImageFile) {
-    reader.readAsDataURL(this.selectedImageFile);
-  }
+  console.log(event);
+  this.selectedImageFile = event.target.files[0];
 },
-
-
-
-
 
   },
 };
 </script>
-
 
 <style scoped>
 
