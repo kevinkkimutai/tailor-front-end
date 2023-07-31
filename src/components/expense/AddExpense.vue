@@ -28,6 +28,15 @@
  
    <div class="formbold-form-wrapper bg-gray-300  dark:bg-gray-800 rounded-lg">
      <h1 class="text-black mb-2 text-center dark:text-gray-200 font-bold">ADD EXPENSE</h1>
+
+     <div class="p-2">
+  <Error 
+    v-if="showNotification"
+    :show="showNotification"
+    :message="notificationMessage"
+    :notificationType="notificationType"
+  />
+</div>
      <form @submit.prevent="handleSubmit" class="p-2">
          <div class="formbold-input-flex">
            <div>
@@ -66,7 +75,7 @@
              ></textarea>
          </div>
  
-         <button class="formbold-btn">
+         <button type="submit" class="formbold-btn">
              Add Expense    
          </button>
      </form>
@@ -83,12 +92,12 @@
 </template>
 <script>
 import axios from 'axios';
-
+import Error from '../error/ErrorPage.vue';
 
  export default {
-  name: "AddExpense",
+  name: 'AddExpense',
   components: {
-       
+       Error,
         
     },
         data() {
@@ -103,13 +112,13 @@ import axios from 'axios';
             }
         },
 
-  method: {
+  methods: {
     async handleSubmit() {
       try {
         const formData = new FormData();
-        formData.append('category', this.name);
+        formData.append('category', this.category);
         formData.append('description', this.description);
-        formData.append('amount', this.price);
+        formData.append('amount', this.amount);
 
         const response = await axios.post('expense', formData);
         console.log(response.data);
