@@ -28,15 +28,16 @@
  
    <div class="formbold-form-wrapper bg-gray-300  dark:bg-gray-800 rounded-lg">
      <h1 class="text-black mb-2 text-center dark:text-gray-200 font-bold">ADD EXPENSE</h1>
-     <form action="https://formbold.com/s/FORM_ID" method="POST" class="p-2">
+     <form @submit.prevent="handleSubmit" class="p-2">
          <div class="formbold-input-flex">
            <div>
-               <label for="design" class="formbold-form-label dark:text-gray-200"> Expense Name </label>
+               <label for="design" class="formbold-form-label dark:text-gray-200"> Expense Category </label>
                <input
                type="text"
                name="design" 
                id="design"
-               placeholder="Expense Name"
+               v-model="category"
+               placeholder="Expense Category"
                class="formbold-form-input dark:text-gray-200 dark:bg-gray-700"
                />
            </div>
@@ -47,7 +48,11 @@
   <div class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none dark:text-gray-200 text-black">
   Ksh: 
   </div>
-  <input type="text" id="input-group-1" class=" border border-gray-300 text-gray-200 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-12 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@flowbite.com">
+  <input type="number"
+   id="input-group-1" 
+   v-model="amount"
+   class=" border border-gray-300 text-gray-200 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-12 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+   placeholder="20000">
 </div>
          <div>
              <label for="message" class="formbold-form-label dark:text-gray-200 "> Expense Description </label>
@@ -55,6 +60,7 @@
                  rows="4"
                  name="message"
                  id="message"
+                 v-model="description"
                  placeholder="Type the Description here"
                  class="formbold-form-input dark:bg-gray-700 dark:text-gray-200"
              ></textarea>
@@ -76,9 +82,59 @@
      </div>
 </template>
 <script>
+import axios from 'axios';
 
 
  export default {
+  name: "AddExpense",
+  components: {
+       
+        
+    },
+        data() {
+            return {
+                category: '',
+                description: '',
+                amount: 0,
+                error: '',
+                showNotification: false,
+                notificationMessage: '',
+                notificationType: 'success',
+            }
+        },
+
+  method: {
+    async handleSubmit() {
+      try {
+        const formData = new FormData();
+        formData.append('category', this.name);
+        formData.append('description', this.description);
+        formData.append('amount', this.price);
+
+        const response = await axios.post('expense', formData);
+        console.log(response.data);
+
+        // Show success notification
+        this.showNotification = true;
+        this.notificationMessage = 'Design added successfully';
+        this.notificationType = 'success';
+
+        // Reset form after successful submission
+        this.category = '';
+        this.description = '';
+        this.amount = '';
+        // handle success
+      } catch (error) {
+        this.showNotification = true;
+        this.notificationMessage = 'Something went wrong. Try again!';
+        this.notificationType = 'error';
+
+        console.error(error);
+        // handle error
+      }
+    },
+
+  }
  
      
  }

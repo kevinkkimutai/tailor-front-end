@@ -159,7 +159,6 @@ export default {
       showModal: false,
       selectedDesign: {},
       selectedImageFile: null, 
-      
     };
   },
   mounted() {
@@ -168,55 +167,78 @@ export default {
   methods: {
     fetchDesigns() {
       axios.get('designs')
-        .then(response => {
+       .then(response => {
           this.designs = response.data;
         })
-        .catch(error => {
+       .catch(error => {
           console.error(error);
         });
     },
     getImageUrl(image) {
-      return image ? `http://localhost:8000/storage/${image.replace('public/', '')}` : '';
+      return image? `http://localhost:8000/storage/${image.replace('public/', '')}` : '';
     },
     openEditModal(design) {
-  // Make a copy of the design to avoid modifying the original data
-  this.selectedDesign = {...design };
+      // Make a copy of the design to avoid modifying the original data
+      this.selectedDesign = {...design };
 
-  // Check if a property is missing and set it to an empty string if it is
-  if (!this.selectedDesign.name) {
-    this.selectedDesign.name = '';
-  }
-  if (!this.selectedDesign.price) {
-    this.selectedDesign.price = '';
-  }
-  if (!this.selectedDesign.description) {
-    this.selectedDesign.description = '';
-  }
+      // Check if a property is missing and set it to an empty string if it is
+      if (!this.selectedDesign.name) {
+        this.selectedDesign.name = '';
+      }
+      if (!this.selectedDesign.price) {
+        this.selectedDesign.price = '';
+      }
+      if (!this.selectedDesign.description) {
+        this.selectedDesign.description = '';
+      }
 
-  this.showModal = true;
-},
+      this.showModal = true;
+    },
 
     hideModal() {
       this.showModal = false;
     },
-    
+
     // edit function
     async handleEdit() {
   try {
-    if (!this.selectedDesign.name ||!this.selectedDesign.price ||!this.selectedDesign.description) {
-      console.error('Design name, price, and description are required.');
+    console.log('Selected design:', this.selectedDesign);
+    console.log('Selected image file:', this.selectedImageFile);
+
+    if (!this.selectedDesign.name) {
+      console.error('Design name is required.');
+      return;
+    }
+    if (!this.selectedDesign.price) {
+      console.error('Design price is required.');
+      return;
+    }
+    if (!this.selectedDesign.description) {
+      console.error('Design description is required.');
       return;
     }
 
-    const requestData = {
+    const data = {
       name: this.selectedDesign.name,
-      price: this.selectedDesign.price || '', // Set price to an empty string if it is not provided
+      price: parseInt(this.selectedDesign.price),
       description: this.selectedDesign.description,
-      image: this.selectedImageFile,
+      update: true,
+      id: parseInt(this.selectedDesign.id)
     };
 
+    const config = {
+      headers: {
+        'Content-Type': 'Multipart/form-data'
+      }
+    };
 
-    const response = await axios.put(`design/${this.selectedDesign.id}`, requestData);
+    if (this.selectedImageFile) {
+      data.image = this.selectedImageFile;
+    }
+
+    console.log('Data:', data);
+
+    const response = await axios.put(`design/${this.selectedDesign.id}`, data, config);
 
     console.log('Design updated successfully.');
     console.log(response);
@@ -226,13 +248,10 @@ export default {
     console.error('Error updating design:', error);
   }
 },
-
-
 handleImageChange(event) {
-  console.log(event);
+  console.log(event.target.files[0]);
   this.selectedImageFile = event.target.files[0];
 },
-
   },
 };
 </script>
