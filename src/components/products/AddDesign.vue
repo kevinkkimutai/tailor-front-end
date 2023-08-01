@@ -24,7 +24,7 @@
 
 <!-- card -->
 
-<div class="formbold-main-wrapper">
+  <div class="formbold-main-wrapper">
 
   <div class="formbold-form-wrapper bg-gray-300 dark:bg-gray-800 rounded-lg">
     <h1 class="text-black mb-2 text-center font-bold dark:text-gray-200">ADD DESIGN</h1>

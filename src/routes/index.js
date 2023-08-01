@@ -16,6 +16,7 @@ import AddStaff from '../components/users/AddStaff.vue';
 import ForgotPassword from '../components/auth/ForgotPassword.vue';
 import ResetPassword from '../components/auth/ResetPassword.vue';
 import AllDesigns from '../components/products/AllDesigns.vue';
+import UserProfile from '../components/users/UserProfile.vue';
 
 const routes = [
  
@@ -42,6 +43,11 @@ const routes = [
   {
     path: '/users',
     component: UserPage,
+    meta: { requiresAuth: true },
+  },
+  {
+    path: '/profile',
+    component: UserProfile,
     meta: { requiresAuth: true },
   },
   {
