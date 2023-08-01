@@ -18,7 +18,8 @@ export default {
   },
     data() {
     return {
-        user: null
+        user: null,
+       
     }
   },
 async created() {
@@ -31,6 +32,8 @@ async created() {
       // handle error here
     }
   },
+
+
 
 }
 </script>

@@ -125,7 +125,7 @@ import Error from '../error/ErrorPage.vue';
 
         // Show success notification
         this.showNotification = true;
-        this.notificationMessage = 'Design added successfully';
+        this.notificationMessage = 'Expense added successfully';
         this.notificationType = 'success';
 
         // Reset form after successful submission
