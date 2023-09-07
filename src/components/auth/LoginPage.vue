@@ -26,6 +26,7 @@
            <!-- alert -->
            <error class="p-b" v-if="error" :error="error"/>
   <!-- end -->
+  <!-- form start -->
           <form @submit.prevent="login" class="sm:w-2/3 w-full px-14 lg:px-0 mx-auto">
              
               <label for="input-group-1" class="block text-start mb-2 text-sm font-medium text-gray-100 dark:text-white">Email</label>
@@ -66,6 +67,7 @@
 
               </div>
           </form>
+          <!-- form end -->
         </div>
       </div>
     </div>
