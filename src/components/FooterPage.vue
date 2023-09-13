@@ -18,6 +18,7 @@
     </div>
     <div class="container mx-auto px-4">
       <div class="flex flex-wrap">
+        <!-- communication secrtion -->
         <div class="w-full lg:w-6/12 px-4">
           <h4 class="text-black text-3xl font-semibold">Let's keep in touch!</h4>
           <h5 class="text-lg mt-0 mb-2 text-gray-400">
@@ -47,6 +48,7 @@
             </button>
           </div>
         </div>
+        <!--social links  -->
         <div class="w-full lg:w-6/12 px-4">
           <div class="flex flex-wrap items-top mb-6">
             <div class="w-full lg:w-4/12 px-4 ml-auto">
